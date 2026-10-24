@@ -20,7 +20,7 @@ NepTTS-Bench, 205 sentences, one take, scored with the benchmark's recogniser (M
 | ElevenLabs v3 | 15.70 | 12.91 | |
 | Piper | 18.68 | 17.00 | |
 
-Cloning unseen speakers (FLEURS, 82 items): Swar CER 4.55, speaker similarity 0.691, UTMOS 2.67; OmniVoice 5.30, 0.681, 2.49. Mixed Nepali and English (30 held-out sentences): CER 5.6 against 12.1 for OmniVoice. UTMOS and NepaliMOS are automatic predictors, not listeners; the public listening test above is the human check.
+Cloning unseen speakers (FLEURS, 82 items): Swar CER 4.55, speaker similarity 0.691, UTMOS 2.67; OmniVoice 5.30, 0.681, 2.49. Mixed Nepali and English (30 held-out sentences): CER 5.6 against 11.4 for OmniVoice. UTMOS and NepaliMOS are automatic predictors, not listeners; the public listening test above is the human check.
 
 ## What is here
 
