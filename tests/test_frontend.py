@@ -265,3 +265,11 @@ if __name__ == "__main__":
             traceback.print_exc()
     print(f"\n{passed}/{len(fns)} passed")
     sys.exit(0 if passed == len(fns) else 1)
+
+
+def test_wah_keeps_w():
+    # वाह is "wah" (user heard "baha" when it became बाह); other word-initial व stay ब
+    from frontend.pron import nepal_accent
+    assert nepal_accent("वाह, कति राम्रो!") == "वाह, कति राम्रो!"
+    assert nepal_accent("वाहवाही") == "वाहवाही"
+    assert nepal_accent("वाहन") == "बाहन" and nepal_accent("वन") == "बन"

@@ -46,7 +46,8 @@ _NEPAL = [
     (re.compile(r"श(?!्र)"), "स"),          # keep श्र (श्री is said "shree")
     (re.compile(r"ष"), "स"),
     (re.compile(r"ण"), "न"),
-    (re.compile(r"(?<![\u0900-\u097F])व"), "ब"),   # word-initial व
+    # word-initial व, except वाह / वाहवाही ("wah", not "baha": user, 2026-10-24)
+    (re.compile(r"(?<![\u0900-\u097F])व(?!ाह(?![\u0900-\u097F])|ाहवाही)"), "ब"),
     (re.compile(r"र्व"), "र्ब"),
     (re.compile(r"ृ"), "्रि"),
 ]
