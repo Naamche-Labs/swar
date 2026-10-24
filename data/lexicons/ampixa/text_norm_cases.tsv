@@ -1,0 +1,6 @@
+case_id	raw_text	expected_spoken	semiotic_class	style	status	notes
+tn_0001	२५०	दुई सय पचास	cardinal	spoken_nepali	needs_review	Seed case for Devanagari digits
+tn_0002	250	दुई सय पचास	cardinal	spoken_nepali	needs_review	Seed case for ASCII digits
+tn_0003	रु २५०	दुई सय पचास रुपैयाँ	currency	spoken_nepali	needs_review	Review currency order and common reading
+tn_0004	५:३०	पाँच बजेर तीस मिनेट	time	spoken_nepali	needs_review	Review compact vs formal time reading
+tn_0005	१०%	दस प्रतिशत	percentage	spoken_nepali	needs_review	Review percentage wording

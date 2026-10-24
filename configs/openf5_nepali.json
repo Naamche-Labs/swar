@@ -1,0 +1,44 @@
+{
+  "experiment": "nepali-f5-v0",
+  "arch": "F5-TTS v1 Base (flow-matching DiT, ~336M), zero-shot cloning",
+  "init_candidates": [
+    {"repo": "ai4bharat/IndicF5", "license": "MIT", "access": "gated:auto, NOT yet requested",
+     "why": "already trained on ~1,417h of 11 Indic languages incl. Hindi/Marathi (Devanagari), so Devanagari char embeddings exist; Nepali not included",
+     "preferred": true},
+    {"repo": "mrfakename/OpenF5-TTS-Base", "license": "Apache-2.0", "access": "public",
+     "why": "permissive fallback; English-only alpha checkpoint, card says 'still inferior to official F5'"}
+  ],
+  "avoid": "SWivid/F5-TTS weights are CC-BY-NC",
+  "text_input_ab": {
+    "chars": "raw normalized Devanagari (metadata_chars.csv) - the IndicF5 approach, reuses its Devanagari embeddings",
+    "phonemes": "frontend G2P, one symbol per phoneme via encode_for_f5 (metadata_phonemes.csv) - fixes schwa deletion but needs new embeddings",
+    "decide_by": "held-out CER + speaker similarity at ~20k updates"
+  },
+  "data": {
+    "train": ["ai4bharat/indicvoices_r Nepali (105.9h, 716 spk, CC-BY-4.0)", "ai4bharat/Rasa Nepali (55.1h, 2 studio voices, CC-BY-4.0, synthesis consent)"],
+    "optional_extra": ["ai4bharat/IndicVoices Nepali (~507h field audio; filter by SNR/CER first)", "ARTPARK-IISc/Vaani (38h transcribed, CC-BY-4.0)"],
+    "accent_note": "IndicVoices(-R) Nepali was recorded in Darjeeling/Kalimpong/Assam (Indian Nepali); balance with Nepal-recorded audio. SLR54 (Kathmandu, 165h) is CC-BY-SA - include only if releasing weights CC-BY-SA",
+    "eval": "google/fleurs ne_np + 50 held-out speakers from mine_reference_voice.py",
+    "language_mix": "Nepali only (adding English during fine-tune hurt IndicF5: MUSHRA 66.2 vs 73.4)",
+    "clip_seconds": [3, 12],
+    "prep": "pipeline/prepare_data.py -> f5_tts/train/datasets/prepare_csv_wavs.py metadata_*.csv out/"
+  },
+  "vocab": "extend vocab.txt + text embedding before finetune (finetune_gradio 'Check Vocab'/'Extend', or expand_model_embeddings); init new rows from existing tokens",
+  "train": {
+    "cmd": "accelerate launch --mixed_precision bf16 src/f5_tts/train/finetune_cli.py --exp_name F5TTS_v1_Base --finetune --pretrain <init.pt> --tokenizer custom --tokenizer_path vocab.txt",
+    "learning_rate": 5e-5,
+    "batch_size_type": "frame",
+    "batch_size_per_gpu": 30000,
+    "num_warmup_updates": 10000,
+    "use_ema": "off early",
+    "save_per_updates": 5000,
+    "max_updates": 150000,
+    "select_checkpoint": "by held-out CER (MMS/Kriti) + ECAPA speaker similarity, not the last step"
+  },
+  "compute": {
+    "pilot": "1x H100, ~20k updates, to pick init + text input",
+    "full": "~8x H100 for 100-150k updates, ~2-4 days, ~$2-4K (estimate scaled from IndicF5's 32x H100 run)",
+    "first_usable": "~30-50k updates"
+  },
+  "sources": ["https://arxiv.org/html/2505.20693", "https://github.com/SWivid/F5-TTS/discussions/57", "https://huggingface.co/mrfakename/OpenF5-TTS-Base"]
+}

@@ -1,0 +1,13 @@
+case_id	contrast	word_a	phones_a	word_b	phones_b	style	status	notes
+mp_0001	aspiration_velar	कल	k ax l	खल	kh ax l	spoken_nepali	v0	क/ख — voiceless velar aspiration (Khatiwada 2009 phonemic)
+mp_0002	aspiration_dental	तल	t ax l	थल	th ax l	spoken_nepali	v0	त/थ — voiceless dental aspiration
+mp_0003	aspiration_bilabial	पाल	p aa l	फाल	ph aa l	spoken_nepali	v0	प/फ — original proposal example
+mp_0004	voicing_bilabial	पाल	p aa l	बाल	b aa l	spoken_nepali	v0	प/ब — voicing contrast
+mp_0005	voiced_aspiration_bilabial	बाल	b aa l	भाल	bh aa l	spoken_nepali	v0	ब/भ — voiced vs breathy-voiced
+mp_0006	dental_retroflex_t	तल	t ax l	टल	tx ax l	spoken_nepali	v0	त/ट — dental vs retroflex stop
+mp_0007	dental_retroflex_d	दल	d ax l	डल	dx ax l	spoken_nepali	v0	द/ड — dental vs retroflex voiced stop
+mp_0008	gemination	चपल	ts ax p ax l	चप्पल	ts ax p: ax l	spoken_nepali	v0	chapal 'unstable' vs chappal 'slipper' — geminate p
+mp_0009	nasal_oral_vowel	कप	k ax p	काँप	k aan p	spoken_nepali	v0	cap vs cãp — vowel nasalization
+mp_0010	nasal_oral_vowel_long	बस	b ax s	बाँस	b aan s	spoken_nepali	v0	bas vs bãas — nasalization on long-orthography vowel (collapsed length but kept nasalization)
+mp_0011	affricate_aspiration	चाल	ts aa l	छाल	tsh aa l	spoken_nepali	v0	च/छ — alveolar affricate aspiration
+mp_0012	affricate_voicing	चाल	ts aa l	जाल	dz aa l	spoken_nepali	v0	च/ज — affricate voicing

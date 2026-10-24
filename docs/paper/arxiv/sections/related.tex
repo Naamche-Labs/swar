@@ -1,0 +1,10 @@
+\section{Background and Related Work}
+
+\subsection{Zero-Shot Text-to-Speech}
+Zero-shot TTS clones a voice from a short prompt recording. Neural codec language models~\citep{valle} and multilingual systems such as YourTTS~\citep{yourtts}, XTTS~\citep{xtts} and CosyVoice~\citep{cosyvoice} predict discrete speech tokens. MaskGCT~\citep{maskgct}, E2 TTS~\citep{e2tts} and F5-TTS~\citep{f5} instead generate speech non-autoregressively from the prompt audio and its transcript; F5-TTS uses flow matching over mel spectrograms and a separate vocoder such as Vocos~\citep{vocos} or BigVGAN~\citep{bigvgan}. These models need an exact transcript of the prompt, which casual uploads do not come with.
+
+\subsection{Indic and Nepali TTS}
+IndicF5~\citep{indicf5} trains F5-TTS on Indic languages with character input; IndicVoices-R~\citep{indicvoicesr} supplies most of its Nepali, recorded largely in India. Fixed-voice systems include VITS-style models~\citep{vits} and description-controlled Parler-TTS~\citep{parler}, whose Indic version~\citep{indicparler} has one Nepali voice. For Nepal-recorded data, OpenSLR provides a studio TTS corpus~\citep{slr43} and crowd-sourced ASR speech~\citep{slr54}, and FLEURS~\citep{fleurs} adds multi-speaker read Nepali. Prior Nepali TTS is mostly single-voice concatenative or parametric synthesis; we are not aware of an open Nepali system that clones voices from phone audio.
+
+\subsection{Evaluating Nepali TTS}
+NepTTS-Bench~\citep{neptts} is the public Nepali benchmark: designed sentences in categories such as minimal pairs, questions and robustness, ASR-based character error, and a naturalness predictor. Automatic naturalness scores such as UTMOS~\citep{utmos} are trained on English read speech; we use them, but treat a native listener's judgement as the arbiter where the two disagree.

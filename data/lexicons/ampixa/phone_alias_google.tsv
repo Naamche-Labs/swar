@@ -1,0 +1,60 @@
+google_phone	project_phone	mode	strategy	notes
+ax	ax	default	identity	open-mid central schwa
+aa	aa	default	identity	open central
+i	i	default	identity	close front
+e	e	default	identity	close-mid front
+o	o	default	identity	close-mid back
+u	u	default	identity	close back
+axn	axn	default	identity	nasalized schwa
+aan	aan	default	identity	nasalized open central
+in	in	default	identity	nasalized close front
+en	en	default	identity	nasalized close-mid front
+un	un	default	identity	nasalized close back
+axj	axj	default	identity	diphthong /ʌi̯/
+axw	axw	default	identity	diphthong /ʌu̯/
+aaj	aaj	default	identity	diphthong /ai̯/
+aaw	aaw	default	identity	diphthong /au̯/
+oj	oj	default	identity	diphthong /oi̯/
+ew	ew	default	identity	diphthong /eu̯/
+ow	ow	default	identity	diphthong /ou̯/; rare
+axjn	axjn	default	identity	nasalized /ʌi̯/
+axwn	axwn	default	identity	nasalized /ʌu̯/
+aajn	aajn	default	identity	nasalized /ai̯/
+aawn	aawn	default	identity	nasalized /au̯/
+ojn	ojn	default	identity	nasalized /oi̯/; very rare
+own	own	default	identity	nasalized /ou̯/; very rare
+p	p	default	identity	bilabial stop
+ph	ph	default	identity	bilabial aspirated; default mode does not auto-derive /f/ from फ़
+b	b	default	identity	bilabial voiced
+bh	bh	default	identity	bilabial breathy
+t	t	default	identity	dental stop
+th	th	default	identity	dental aspirated
+d	d	default	identity	dental voiced
+dh	dh	default	identity	dental breathy
+tt	tx	default	rename	Google retroflex → project tx (label rename only)
+tth	txh	default	rename	rename
+dd	dx	default	rename	rename
+ddh	dxh	default	rename	rename
+k	k	default	identity	velar stop
+kh	kh	default	identity	velar aspirated
+g	g	default	identity	velar voiced
+gh	gh	default	identity	velar breathy
+ts	ts	default	identity	alveolar affricate (Khatiwada 2009 confirms place)
+tsh	tsh	default	identity	alveolar affricate aspirated
+jh	dz	default	rename	Google jh = voiced unaspirated affricate; project dz
+jhh	dzh	default	rename	Google jhh = voiced breathy-aspirated affricate; project dzh
+m	m	default	identity	bilabial nasal
+n	n	default	identity	alveolar nasal
+ng	ng	default	identity	velar nasal
+nn	n	default	collapse	Google retroflex nasal /ɳ/ → project /n/ per Khatiwada 2009
+nn	nx	careful	preserve	careful_sanskritized: preserve as nx
+r	r	default	identity	tap/trill
+s	s	default	identity	default mode collapses श ष स → s
+h	h	default	identity	glottal voiced fricative
+l	l	default	identity	alveolar lateral
+y	y	default	identity	palatal approximant
+w	w	default	identity	bilabial approximant
+sil	sil	default	identity	silence
+sp	sp	default	identity	pause
+brk	brk	default	identity	phrase break
+sent	sent	default	identity	sentence boundary

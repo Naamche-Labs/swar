@@ -1,0 +1,64 @@
+phone	ipa_candidate	status	notes
+i	i	v1.0
+e	e	v1.0
+ax	ʌ	v1.0	Khatiwada 2009 replaces classical [ə] with [ʌ]; allophones [ɔ/ɒ … ʌ/ə]
+aa	a	v1.0	open central; no /aː/ phoneme — written length is orthographic only
+o	o	v1.0
+u	u	v1.0
+in	ĩ	v1.0
+en	ẽ	v1.0
+axn	ʌ̃	v1.0
+aan	ã	v1.0
+un	ũ	v1.0
+axj	ʌi̯	v1.0	Pokharel/Khatiwada vowel+glide
+axw	ʌu̯	v1.0
+aaj	ai̯	v1.0
+aaw	au̯	v1.0
+oj	oi̯	v1.0
+ew	eu̯	v1.0
+ow	ou̯	v1.0	rare; consider collapse at training time
+axjn	ʌ̃i̯	v1.0
+axwn	ʌ̃u̯	v1.0
+aajn	ãi̯	v1.0
+aawn	ãu̯	v1.0
+ojn	õi̯	v1.0	very rare
+own	õu̯	v1.0	very rare
+p	p	v1.0
+ph	pʰ	v1.0	may surface as [ɸ] / [f] in fast speech
+b	b	v1.0
+bh	bʱ	v1.0	may lose breathiness intervocalically (Khatiwada 2009)
+t	t̪	v1.0	dental
+th	t̪ʰ	v1.0
+d	d̪	v1.0
+dh	d̪ʱ	v1.0
+tx	ʈ	v1.0	cacuminal post-alveolar acoustic target (Khatiwada 2019: 75% cacuminal)
+txh	ʈʰ	v1.0
+dx	ɖ	v1.0	intervocalic flap allophone [ɽ]
+dxh	ɖʱ	v1.0
+k	k	v1.0
+kh	kʰ	v1.0
+g	ɡ	v1.0
+gh	ɡʱ	v1.0
+ts	t͡s	v1.0	alveolar; laminal contact (Pokharel 1989 palatograms; Clements & Khatiwada 2007)
+tsh	t͡sʰ	v1.0
+dz	d͡z	v1.0
+dzh	d͡zʱ	v1.0
+m	m	v1.0
+n	n	v1.0	covers orthographic न ञ ण in default mode
+ng	ŋ	v1.0	mostly word-final
+r	r	v1.0	tap [ɾ] intervocalic; trill [r] elsewhere; geminate fully trilled
+s	s	v1.0	covers श ष स in default mode
+h	ɦ	v1.0	voiced glottal; intervocalic deletion attested
+l	l	v1.0
+y	j	v1.0	palatal approximant
+w	w	v1.0	bilabial approximant
+sh	ʃ	careful_only	श only in careful_sanskritized
+sx	ʂ	careful_only	ष only in careful_sanskritized
+ny	ɲ	careful_only	ञ only in careful_sanskritized
+nx	ɳ	careful_only	ण only in careful_sanskritized; allophone [ɽ̃] before homorganic
+f	f	loan_only	English loan or nukta-marked फ़
+z	z	loan_only	English loan or nukta-marked ज़
+sil		v1.0	silence
+sp		v1.0	short pause
+brk		v1.0	phrase break
+sent		v1.0	sentence boundary

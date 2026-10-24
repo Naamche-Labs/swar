@@ -1,0 +1,3652 @@
+[
+  {
+    "sent_id": "sent_001",
+    "text_devanagari": "उसको काम राम्रो छ।",
+    "text_romanized": "usako kāma rāmro cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_velar\", \"minimal_pair\"]",
+    "contrast_word": "काम",
+    "pair_id": "phonological_minimal_pairs/aspiration_velar/0"
+  },
+  {
+    "sent_id": "sent_002",
+    "text_devanagari": "उसले खाम पठायो।",
+    "text_romanized": "usale khāma paṭhāyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_velar\", \"minimal_pair\"]",
+    "contrast_word": "खाम",
+    "pair_id": "phonological_minimal_pairs/aspiration_velar/0"
+  },
+  {
+    "sent_id": "sent_003",
+    "text_devanagari": "कल बन्द गर।",
+    "text_romanized": "kala banda gara.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_velar\", \"minimal_pair\"]",
+    "contrast_word": "कल",
+    "pair_id": "phonological_minimal_pairs/aspiration_velar/1"
+  },
+  {
+    "sent_id": "sent_004",
+    "text_devanagari": "खलमा मसला पिस।",
+    "text_romanized": "khalamā masalā pisa.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_velar\", \"minimal_pair\"]",
+    "contrast_word": "खल",
+    "pair_id": "phonological_minimal_pairs/aspiration_velar/1"
+  },
+  {
+    "sent_id": "sent_005",
+    "text_devanagari": "मेरो गाउँ टाढा छ।",
+    "text_romanized": "mero gāũ ṭāḍhā cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_velar\", \"minimal_pair\"]",
+    "contrast_word": "गाउँ",
+    "pair_id": "phonological_minimal_pairs/aspiration_velar/2"
+  },
+  {
+    "sent_id": "sent_006",
+    "text_devanagari": "उसको हातमा घाउ लाग्यो।",
+    "text_romanized": "usako hātamā ghāu lāgyo.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_velar\", \"minimal_pair\"]",
+    "contrast_word": "घाउ",
+    "pair_id": "phonological_minimal_pairs/aspiration_velar/2"
+  },
+  {
+    "sent_id": "sent_007",
+    "text_devanagari": "खेतको गडा बनाउ।",
+    "text_romanized": "khetako gaḍā banāu.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_velar\", \"minimal_pair\"]",
+    "contrast_word": "गडा",
+    "pair_id": "phonological_minimal_pairs/aspiration_velar/3"
+  },
+  {
+    "sent_id": "sent_008",
+    "text_devanagari": "घडामा पानी भर।",
+    "text_romanized": "ghaḍāmā pānī bhara.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_velar\", \"minimal_pair\"]",
+    "contrast_word": "घडा",
+    "pair_id": "phonological_minimal_pairs/aspiration_velar/3"
+  },
+  {
+    "sent_id": "sent_009",
+    "text_devanagari": "त्यो काल कठिन थियो।",
+    "text_romanized": "tyo kāla kaṭhina thiyo.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_velar\", \"minimal_pair\"]",
+    "contrast_word": "काल",
+    "pair_id": "phonological_minimal_pairs/aspiration_velar/4"
+  },
+  {
+    "sent_id": "sent_010",
+    "text_devanagari": "बच्चाको गाल रातो छ।",
+    "text_romanized": "baccāko gāla rāto cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_velar\", \"minimal_pair\"]",
+    "contrast_word": "गाल",
+    "pair_id": "phonological_minimal_pairs/aspiration_velar/4"
+  },
+  {
+    "sent_id": "sent_011",
+    "text_devanagari": "चार जना मान्छे आए।",
+    "text_romanized": "cāra janā mānche āe.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_palatal\", \"minimal_pair\"]",
+    "contrast_word": "चार",
+    "pair_id": "phonological_minimal_pairs/aspiration_palatal/0"
+  },
+  {
+    "sent_id": "sent_012",
+    "text_devanagari": "आगोको छार बटुल।",
+    "text_romanized": "āgoko chāra baṭula.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_palatal\", \"minimal_pair\"]",
+    "contrast_word": "छार",
+    "pair_id": "phonological_minimal_pairs/aspiration_palatal/0"
+  },
+  {
+    "sent_id": "sent_013",
+    "text_devanagari": "रगतको चाप बढ्यो।",
+    "text_romanized": "ragatako cāpa baḍhyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_palatal\", \"minimal_pair\"]",
+    "contrast_word": "चाप",
+    "pair_id": "phonological_minimal_pairs/aspiration_palatal/1"
+  },
+  {
+    "sent_id": "sent_014",
+    "text_devanagari": "कागजमा छाप लगाउ।",
+    "text_romanized": "kāgajamā chāpa lagāu.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_palatal\", \"minimal_pair\"]",
+    "contrast_word": "छाप",
+    "pair_id": "phonological_minimal_pairs/aspiration_palatal/1"
+  },
+  {
+    "sent_id": "sent_015",
+    "text_devanagari": "माछा मार्न जाल फेर।",
+    "text_romanized": "māchā mārna jāla phera.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_palatal\", \"minimal_pair\"]",
+    "contrast_word": "जाल",
+    "pair_id": "phonological_minimal_pairs/aspiration_palatal/2"
+  },
+  {
+    "sent_id": "sent_016",
+    "text_devanagari": "यो खानामा झाल धेरै छ।",
+    "text_romanized": "yo khānāmā jhāla dherai cha.",
+    "word_count": 5,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_palatal\", \"minimal_pair\"]",
+    "contrast_word": "झाल",
+    "pair_id": "phonological_minimal_pairs/aspiration_palatal/2"
+  },
+  {
+    "sent_id": "sent_017",
+    "text_devanagari": "भोलि जाँच छ।",
+    "text_romanized": "bholi jā̃ca cha.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_palatal\", \"minimal_pair\"]",
+    "contrast_word": "जाँच",
+    "pair_id": "phonological_minimal_pairs/aspiration_palatal/3"
+  },
+  {
+    "sent_id": "sent_018",
+    "text_devanagari": "ढोकाबाट झाँक।",
+    "text_romanized": "ḍhokābāṭa jhā̃ka.",
+    "word_count": 2,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_palatal\", \"minimal_pair\"]",
+    "contrast_word": "झाँक",
+    "pair_id": "phonological_minimal_pairs/aspiration_palatal/3"
+  },
+  {
+    "sent_id": "sent_019",
+    "text_devanagari": "चोर भागिहाल्यो।",
+    "text_romanized": "cora bhāgihālyo.",
+    "word_count": 2,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_palatal\", \"minimal_pair\"]",
+    "contrast_word": "चोर",
+    "pair_id": "phonological_minimal_pairs/aspiration_palatal/4"
+  },
+  {
+    "sent_id": "sent_020",
+    "text_devanagari": "खेतको छोरमा रूख छ।",
+    "text_romanized": "khetako choramā rūkha cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_palatal\", \"minimal_pair\"]",
+    "contrast_word": "छोर",
+    "pair_id": "phonological_minimal_pairs/aspiration_palatal/4"
+  },
+  {
+    "sent_id": "sent_021",
+    "text_devanagari": "रोटीको टुक्रा दे।",
+    "text_romanized": "roṭīko ṭukrā de.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "टुक्रा",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/0"
+  },
+  {
+    "sent_id": "sent_022",
+    "text_devanagari": "उसले प्रस्ताव ठुक्रायो।",
+    "text_romanized": "usale prastāva ṭhukrāyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "ठुक्रा",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/0"
+  },
+  {
+    "sent_id": "sent_023",
+    "text_devanagari": "मेरो टाउको दुख्यो।",
+    "text_romanized": "mero ṭāuko dukhyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "टाउको",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/1"
+  },
+  {
+    "sent_id": "sent_024",
+    "text_devanagari": "यो राम्रो ठाउँ हो।",
+    "text_romanized": "yo rāmro ṭhāũ ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "ठाउँ",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/1"
+  },
+  {
+    "sent_id": "sent_025",
+    "text_devanagari": "डाक आयो।",
+    "text_romanized": "ḍāka āyo.",
+    "word_count": 2,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "डाक",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/2"
+  },
+  {
+    "sent_id": "sent_026",
+    "text_devanagari": "मुख ढाक।",
+    "text_romanized": "mukha ḍhāka.",
+    "word_count": 2,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "ढाक",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/2"
+  },
+  {
+    "sent_id": "sent_027",
+    "text_devanagari": "डोलमा पानी भर।",
+    "text_romanized": "ḍolamā pānī bhara.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "डोल",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/3"
+  },
+  {
+    "sent_id": "sent_028",
+    "text_devanagari": "ढोल बजाउ।",
+    "text_romanized": "ḍhola bajāu.",
+    "word_count": 2,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "ढोल",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/3"
+  },
+  {
+    "sent_id": "sent_029",
+    "text_devanagari": "उसले टोपी लगायो।",
+    "text_romanized": "usale ṭopī lagāyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "टोपी",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/4"
+  },
+  {
+    "sent_id": "sent_030",
+    "text_devanagari": "ढिकीमा धान कुट।",
+    "text_romanized": "ḍhikīmā dhāna kuṭa.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "ढिकी",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/4"
+  },
+  {
+    "sent_id": "sent_031",
+    "text_devanagari": "फेवा ताल सुन्दर छ।",
+    "text_romanized": "phevā tāla sundara cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_dental\", \"minimal_pair\"]",
+    "contrast_word": "ताल",
+    "pair_id": "phonological_minimal_pairs/aspiration_dental/0"
+  },
+  {
+    "sent_id": "sent_032",
+    "text_devanagari": "थालमा भात राख।",
+    "text_romanized": "thālamā bhāta rākha.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_dental\", \"minimal_pair\"]",
+    "contrast_word": "थाल",
+    "pair_id": "phonological_minimal_pairs/aspiration_dental/0"
+  },
+  {
+    "sent_id": "sent_033",
+    "text_devanagari": "तार टुटेको छ।",
+    "text_romanized": "tāra ṭuṭeko cha.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_dental\", \"minimal_pair\"]",
+    "contrast_word": "तार",
+    "pair_id": "phonological_minimal_pairs/aspiration_dental/1"
+  },
+  {
+    "sent_id": "sent_034",
+    "text_devanagari": "तिम्रो थार के हो?",
+    "text_romanized": "timro thāra ke ho?",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_dental\", \"minimal_pair\"]",
+    "contrast_word": "थार",
+    "pair_id": "phonological_minimal_pairs/aspiration_dental/1"
+  },
+  {
+    "sent_id": "sent_035",
+    "text_devanagari": "उसले दान दियो।",
+    "text_romanized": "usale dāna diyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_dental\", \"minimal_pair\"]",
+    "contrast_word": "दान",
+    "pair_id": "phonological_minimal_pairs/aspiration_dental/2"
+  },
+  {
+    "sent_id": "sent_036",
+    "text_devanagari": "खेतमा धान रोप।",
+    "text_romanized": "khetamā dhāna ropa.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_dental\", \"minimal_pair\"]",
+    "contrast_word": "धान",
+    "pair_id": "phonological_minimal_pairs/aspiration_dental/2"
+  },
+  {
+    "sent_id": "sent_037",
+    "text_devanagari": "यसको दाम कति हो?",
+    "text_romanized": "yasako dāma kati ho?",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_dental\", \"minimal_pair\"]",
+    "contrast_word": "दाम",
+    "pair_id": "phonological_minimal_pairs/aspiration_dental/3"
+  },
+  {
+    "sent_id": "sent_038",
+    "text_devanagari": "गाउँमा धाम लाग्यो।",
+    "text_romanized": "gāũmā dhāma lāgyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_dental\", \"minimal_pair\"]",
+    "contrast_word": "धाम",
+    "pair_id": "phonological_minimal_pairs/aspiration_dental/3"
+  },
+  {
+    "sent_id": "sent_039",
+    "text_devanagari": "दुन उपत्यकामा खेती हुन्छ।",
+    "text_romanized": "duna upatyakāmā khetī huncha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_dental\", \"minimal_pair\"]",
+    "contrast_word": "दुन",
+    "pair_id": "phonological_minimal_pairs/aspiration_dental/4"
+  },
+  {
+    "sent_id": "sent_040",
+    "text_devanagari": "यो गीतको धुन मिठो छ।",
+    "text_romanized": "yo gītako dhuna miṭho cha.",
+    "word_count": 5,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_dental\", \"minimal_pair\"]",
+    "contrast_word": "धुन",
+    "pair_id": "phonological_minimal_pairs/aspiration_dental/4"
+  },
+  {
+    "sent_id": "sent_041",
+    "text_devanagari": "अब तिम्रो पाल हो।",
+    "text_romanized": "aba timro pāla ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_labial\", \"minimal_pair\"]",
+    "contrast_word": "पाल",
+    "pair_id": "phonological_minimal_pairs/aspiration_labial/0"
+  },
+  {
+    "sent_id": "sent_042",
+    "text_devanagari": "बिरालोले फाल मार्यो।",
+    "text_romanized": "birālole phāla māryo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_labial\", \"minimal_pair\"]",
+    "contrast_word": "फाल",
+    "pair_id": "phonological_minimal_pairs/aspiration_labial/0"
+  },
+  {
+    "sent_id": "sent_043",
+    "text_devanagari": "एक पल रोक।",
+    "text_romanized": "eka pala roka.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_labial\", \"minimal_pair\"]",
+    "contrast_word": "पल",
+    "pair_id": "phonological_minimal_pairs/aspiration_labial/1"
+  },
+  {
+    "sent_id": "sent_044",
+    "text_devanagari": "रूखमा फल लाग्यो।",
+    "text_romanized": "rūkhamā phala lāgyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_labial\", \"minimal_pair\"]",
+    "contrast_word": "फल",
+    "pair_id": "phonological_minimal_pairs/aspiration_labial/1"
+  },
+  {
+    "sent_id": "sent_045",
+    "text_devanagari": "बारीमा बार लगाउ।",
+    "text_romanized": "bārīmā bāra lagāu.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_labial\", \"minimal_pair\"]",
+    "contrast_word": "बार",
+    "pair_id": "phonological_minimal_pairs/aspiration_labial/2"
+  },
+  {
+    "sent_id": "sent_046",
+    "text_devanagari": "यो भार गह्रौँ छ।",
+    "text_romanized": "yo bhāra gahraũ cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_labial\", \"minimal_pair\"]",
+    "contrast_word": "भार",
+    "pair_id": "phonological_minimal_pairs/aspiration_labial/2"
+  },
+  {
+    "sent_id": "sent_047",
+    "text_devanagari": "नानीको बाला हरायो।",
+    "text_romanized": "nānīko bālā harāyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_labial\", \"minimal_pair\"]",
+    "contrast_word": "बाला",
+    "pair_id": "phonological_minimal_pairs/aspiration_labial/3"
+  },
+  {
+    "sent_id": "sent_048",
+    "text_devanagari": "सिपाहीले भाला बोकेको थियो।",
+    "text_romanized": "sipāhīle bhālā bokeko thiyo.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_labial\", \"minimal_pair\"]",
+    "contrast_word": "भाला",
+    "pair_id": "phonological_minimal_pairs/aspiration_labial/3"
+  },
+  {
+    "sent_id": "sent_049",
+    "text_devanagari": "यो बाख्राको पाटो हो।",
+    "text_romanized": "yo bākhrāko pāṭo ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_labial\", \"minimal_pair\"]",
+    "contrast_word": "पाटो",
+    "pair_id": "phonological_minimal_pairs/aspiration_labial/4"
+  },
+  {
+    "sent_id": "sent_050",
+    "text_devanagari": "बाटो हिँड्न सजिलो छ।",
+    "text_romanized": "bāṭo hĩḍna sajilo cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_labial\", \"minimal_pair\"]",
+    "contrast_word": "बाटो",
+    "pair_id": "phonological_minimal_pairs/aspiration_labial/4"
+  },
+  {
+    "sent_id": "sent_051",
+    "text_devanagari": "उसको हास रोकिएन।",
+    "text_romanized": "usako hāsa rokiena.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"oral_vs_nasal_vowel\", \"minimal_pair\"]",
+    "contrast_word": "हास",
+    "pair_id": "phonological_minimal_pairs/oral_vs_nasal_vowel/0"
+  },
+  {
+    "sent_id": "sent_052",
+    "text_devanagari": "पोखरीमा हाँस पौडिरहेको छ।",
+    "text_romanized": "pokharīmā hā̃sa pauḍiraheko cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"oral_vs_nasal_vowel\", \"minimal_pair\"]",
+    "contrast_word": "हाँस",
+    "pair_id": "phonological_minimal_pairs/oral_vs_nasal_vowel/0"
+  },
+  {
+    "sent_id": "sent_053",
+    "text_devanagari": "एउटा गीत गाउ।",
+    "text_romanized": "euṭā gīta gāu.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"oral_vs_nasal_vowel\", \"minimal_pair\"]",
+    "contrast_word": "गाउ",
+    "pair_id": "phonological_minimal_pairs/oral_vs_nasal_vowel/1"
+  },
+  {
+    "sent_id": "sent_054",
+    "text_devanagari": "मेरो गाउँ रामेछाप हो।",
+    "text_romanized": "mero gāũ rāmechāpa ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"oral_vs_nasal_vowel\", \"minimal_pair\"]",
+    "contrast_word": "गाउँ",
+    "pair_id": "phonological_minimal_pairs/oral_vs_nasal_vowel/1"
+  },
+  {
+    "sent_id": "sent_055",
+    "text_devanagari": "दशैँ ठूलो चाड हो।",
+    "text_romanized": "daśaĩ ṭhūlo cāḍa ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"oral_vs_nasal_vowel\", \"minimal_pair\"]",
+    "contrast_word": "चाड",
+    "pair_id": "phonological_minimal_pairs/oral_vs_nasal_vowel/2"
+  },
+  {
+    "sent_id": "sent_056",
+    "text_devanagari": "आज चाँद राम्रो देखिन्छ।",
+    "text_romanized": "āja cā̃da rāmro dekhincha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"oral_vs_nasal_vowel\", \"minimal_pair\"]",
+    "contrast_word": "चाँद",
+    "pair_id": "phonological_minimal_pairs/oral_vs_nasal_vowel/2"
+  },
+  {
+    "sent_id": "sent_057",
+    "text_devanagari": "धानको काटा सकियो।",
+    "text_romanized": "dhānako kāṭā sakiyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"oral_vs_nasal_vowel\", \"minimal_pair\"]",
+    "contrast_word": "काटा",
+    "pair_id": "phonological_minimal_pairs/oral_vs_nasal_vowel/3"
+  },
+  {
+    "sent_id": "sent_058",
+    "text_devanagari": "काँटाले खुट्टा बिझ्यो।",
+    "text_romanized": "kā̃ṭāle khuṭṭā bijhyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"oral_vs_nasal_vowel\", \"minimal_pair\"]",
+    "contrast_word": "काँटा",
+    "pair_id": "phonological_minimal_pairs/oral_vs_nasal_vowel/3"
+  },
+  {
+    "sent_id": "sent_059",
+    "text_devanagari": "सास घरमा हुनुहुन्छ।",
+    "text_romanized": "sāsa gharamā hunuhuncha.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"oral_vs_nasal_vowel\", \"minimal_pair\"]",
+    "contrast_word": "सास",
+    "pair_id": "phonological_minimal_pairs/oral_vs_nasal_vowel/4"
+  },
+  {
+    "sent_id": "sent_060",
+    "text_devanagari": "साँस फेर्नु गाह्रो भयो।",
+    "text_romanized": "sā̃sa phernu gāhro bhayo.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"oral_vs_nasal_vowel\", \"minimal_pair\"]",
+    "contrast_word": "साँस",
+    "pair_id": "phonological_minimal_pairs/oral_vs_nasal_vowel/4"
+  },
+  {
+    "sent_id": "sent_061",
+    "text_devanagari": "रातको बास कहाँ हो?",
+    "text_romanized": "rātako bāsa kahā̃ ho?",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"oral_vs_nasal_vowel\", \"minimal_pair\"]",
+    "contrast_word": "बास",
+    "pair_id": "phonological_minimal_pairs/oral_vs_nasal_vowel/5"
+  },
+  {
+    "sent_id": "sent_062",
+    "text_devanagari": "बाँसको डालो बनाउ।",
+    "text_romanized": "bā̃sako ḍālo banāu.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"oral_vs_nasal_vowel\", \"minimal_pair\"]",
+    "contrast_word": "बाँस",
+    "pair_id": "phonological_minimal_pairs/oral_vs_nasal_vowel/5"
+  },
+  {
+    "sent_id": "sent_063",
+    "text_devanagari": "काम नटाल।",
+    "text_romanized": "kāma naṭāla.",
+    "word_count": 2,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"retroflex_vs_dental\", \"minimal_pair\"]",
+    "contrast_word": "टाल",
+    "pair_id": "phonological_minimal_pairs/retroflex_vs_dental/0"
+  },
+  {
+    "sent_id": "sent_064",
+    "text_devanagari": "ताल राम्रो छ।",
+    "text_romanized": "tāla rāmro cha.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"retroflex_vs_dental\", \"minimal_pair\"]",
+    "contrast_word": "ताल",
+    "pair_id": "phonological_minimal_pairs/retroflex_vs_dental/0"
+  },
+  {
+    "sent_id": "sent_065",
+    "text_devanagari": "रूखको डाल भाँचियो।",
+    "text_romanized": "rūkhako ḍāla bhā̃ciyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"retroflex_vs_dental\", \"minimal_pair\"]",
+    "contrast_word": "डाल",
+    "pair_id": "phonological_minimal_pairs/retroflex_vs_dental/1"
+  },
+  {
+    "sent_id": "sent_066",
+    "text_devanagari": "दाल भात खाऊ।",
+    "text_romanized": "dāla bhāta khāū.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"retroflex_vs_dental\", \"minimal_pair\"]",
+    "contrast_word": "दाल",
+    "pair_id": "phonological_minimal_pairs/retroflex_vs_dental/1"
+  },
+  {
+    "sent_id": "sent_067",
+    "text_devanagari": "नयाँ कोट लगाउ।",
+    "text_romanized": "nayā̃ koṭa lagāu.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"retroflex_vs_dental\", \"minimal_pair\"]",
+    "contrast_word": "कोट",
+    "pair_id": "phonological_minimal_pairs/retroflex_vs_dental/2"
+  },
+  {
+    "sent_id": "sent_068",
+    "text_devanagari": "कोत पर्व मनाइन्छ।",
+    "text_romanized": "kota parva manāincha.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"retroflex_vs_dental\", \"minimal_pair\"]",
+    "contrast_word": "कोत",
+    "pair_id": "phonological_minimal_pairs/retroflex_vs_dental/2"
+  },
+  {
+    "sent_id": "sent_069",
+    "text_devanagari": "नदीको घाटमा जाउ।",
+    "text_romanized": "nadīko ghāṭamā jāu.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"retroflex_vs_dental\", \"minimal_pair\"]",
+    "contrast_word": "घाट",
+    "pair_id": "phonological_minimal_pairs/retroflex_vs_dental/3"
+  },
+  {
+    "sent_id": "sent_070",
+    "text_devanagari": "शत्रुले घात गर्यो।",
+    "text_romanized": "śatrule ghāta garyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"retroflex_vs_dental\", \"minimal_pair\"]",
+    "contrast_word": "घात",
+    "pair_id": "phonological_minimal_pairs/retroflex_vs_dental/3"
+  },
+  {
+    "sent_id": "sent_071",
+    "text_devanagari": "खेत गोड्नु पर्छ।",
+    "text_romanized": "kheta goḍnu parcha.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"retroflex_vs_dental\", \"minimal_pair\"]",
+    "contrast_word": "गोड",
+    "pair_id": "phonological_minimal_pairs/retroflex_vs_dental/4"
+  },
+  {
+    "sent_id": "sent_072",
+    "text_devanagari": "बच्चालाई गोद लिए।",
+    "text_romanized": "baccālāī goda lie.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"retroflex_vs_dental\", \"minimal_pair\"]",
+    "contrast_word": "गोद",
+    "pair_id": "phonological_minimal_pairs/retroflex_vs_dental/4"
+  },
+  {
+    "sent_id": "sent_073",
+    "text_devanagari": "सकल जनसंख्या बढ्यो।",
+    "text_romanized": "sakala janasaṃkhyā baḍhyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"gemination\", \"minimal_pair\"]",
+    "contrast_word": "सकल",
+    "pair_id": "phonological_minimal_pairs/gemination/0"
+  },
+  {
+    "sent_id": "sent_074",
+    "text_devanagari": "सक्कल प्रमाणपत्र ल्याउनुहोस्।",
+    "text_romanized": "sakkala pramāṇapatra lyāunuhos.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"gemination\", \"minimal_pair\"]",
+    "contrast_word": "सक्कल",
+    "pair_id": "phonological_minimal_pairs/gemination/0"
+  },
+  {
+    "sent_id": "sent_075",
+    "text_devanagari": "भीमसेनको गदा प्रसिद्ध छ।",
+    "text_romanized": "bhīmasenako gadā prasiddha cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"gemination\", \"minimal_pair\"]",
+    "contrast_word": "गदा",
+    "pair_id": "phonological_minimal_pairs/gemination/1"
+  },
+  {
+    "sent_id": "sent_076",
+    "text_devanagari": "नयाँ गद्दा किन्यो।",
+    "text_romanized": "nayā̃ gaddā kinyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"gemination\", \"minimal_pair\"]",
+    "contrast_word": "गद्दा",
+    "pair_id": "phonological_minimal_pairs/gemination/1"
+  },
+  {
+    "sent_id": "sent_077",
+    "text_devanagari": "यो कथा रमाइलो छ।",
+    "text_romanized": "yo kathā ramāilo cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"gemination\", \"minimal_pair\"]",
+    "contrast_word": "कथा",
+    "pair_id": "phonological_minimal_pairs/gemination/2"
+  },
+  {
+    "sent_id": "sent_078",
+    "text_devanagari": "पानमा कत्था लगाउ।",
+    "text_romanized": "pānamā katthā lagāu.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"gemination\", \"minimal_pair\"]",
+    "contrast_word": "कत्था",
+    "pair_id": "phonological_minimal_pairs/gemination/2"
+  },
+  {
+    "sent_id": "sent_079",
+    "text_devanagari": "हाम्रो कुल पुरानो हो।",
+    "text_romanized": "hāmro kula purāno ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"gemination\", \"minimal_pair\"]",
+    "contrast_word": "कुल",
+    "pair_id": "phonological_minimal_pairs/gemination/3"
+  },
+  {
+    "sent_id": "sent_080",
+    "text_devanagari": "कुल्लोबाट पानी आउँछ।",
+    "text_romanized": "kullobāṭa pānī āũcha.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"gemination\", \"minimal_pair\"]",
+    "contrast_word": "कुल्लो",
+    "pair_id": "phonological_minimal_pairs/gemination/3"
+  },
+  {
+    "sent_id": "sent_081",
+    "text_devanagari": "घरको पता दिनुहोस्।",
+    "text_romanized": "gharako patā dinuhos.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"gemination\", \"minimal_pair\"]",
+    "contrast_word": "पता",
+    "pair_id": "phonological_minimal_pairs/gemination/4"
+  },
+  {
+    "sent_id": "sent_082",
+    "text_devanagari": "रूखको पत्ता खस्यो।",
+    "text_romanized": "rūkhako pattā khasyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"gemination\", \"minimal_pair\"]",
+    "contrast_word": "पत्ता",
+    "pair_id": "phonological_minimal_pairs/gemination/4"
+  },
+  {
+    "sent_id": "sent_083",
+    "text_devanagari": "कमल फुलेको छ।",
+    "text_romanized": "kamala phuleko cha.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"schwa_deletion\", \"minimal_pair\"]",
+    "contrast_word": "कमल",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/0"
+  },
+  {
+    "sent_id": "sent_084",
+    "text_devanagari": "कमला सुन्तला मिठो छ।",
+    "text_romanized": "kamalā suntalā miṭho cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"schwa_deletion\", \"minimal_pair\"]",
+    "contrast_word": "कमला",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/0"
+  },
+  {
+    "sent_id": "sent_085",
+    "text_devanagari": "खानामा नमक थोरै छ।",
+    "text_romanized": "khānāmā namaka thorai cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"schwa_deletion\", \"minimal_pair\"]",
+    "contrast_word": "नमक",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/1"
+  },
+  {
+    "sent_id": "sent_086",
+    "text_devanagari": "ऊ नम्र मान्छे हो।",
+    "text_romanized": "ū namra mānche ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"schwa_deletion\", \"minimal_pair\"]",
+    "contrast_word": "नम्र",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/1"
+  },
+  {
+    "sent_id": "sent_087",
+    "text_devanagari": "मेरो करम नराम्रो रहेछ।",
+    "text_romanized": "mero karama narāmro rahecha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"schwa_deletion\", \"minimal_pair\"]",
+    "contrast_word": "करम",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/2"
+  },
+  {
+    "sent_id": "sent_088",
+    "text_devanagari": "राम्रो कर्म गर।",
+    "text_romanized": "rāmro karma gara.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"schwa_deletion\", \"minimal_pair\"]",
+    "contrast_word": "कर्म",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/2"
+  },
+  {
+    "sent_id": "sent_089",
+    "text_devanagari": "धरम कमाउनु पर्छ।",
+    "text_romanized": "dharama kamāunu parcha.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"schwa_deletion\", \"minimal_pair\"]",
+    "contrast_word": "धरम",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/3"
+  },
+  {
+    "sent_id": "sent_090",
+    "text_devanagari": "धर्मको मार्गमा हिँड।",
+    "text_romanized": "dharmako mārgamā hĩḍa.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"schwa_deletion\", \"minimal_pair\"]",
+    "contrast_word": "धर्म",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/3"
+  },
+  {
+    "sent_id": "sent_091",
+    "text_devanagari": "कर तिर्नुपर्छ।",
+    "text_romanized": "kara tirnuparcha.",
+    "word_count": 2,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"schwa_deletion\", \"minimal_pair\"]",
+    "contrast_word": "कर",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/4"
+  },
+  {
+    "sent_id": "sent_092",
+    "text_devanagari": "नयाँ कार किन्यो।",
+    "text_romanized": "nayā̃ kāra kinyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"schwa_deletion\", \"minimal_pair\"]",
+    "contrast_word": "कार",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/4"
+  },
+  {
+    "sent_id": "sent_093",
+    "text_devanagari": "गुन बिर्सिनु हुँदैन।",
+    "text_romanized": "guna birsinu hũdaina.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "गुन",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/0"
+  },
+  {
+    "sent_id": "sent_094",
+    "text_devanagari": "उनको गुण राम्रो छ।",
+    "text_romanized": "unako guṇa rāmro cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "गुण",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/0"
+  },
+  {
+    "sent_id": "sent_095",
+    "text_devanagari": "अन्नको एक एक कण बचाउ।",
+    "text_romanized": "annako eka eka kaṇa bacāu.",
+    "word_count": 5,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "कण",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/1"
+  },
+  {
+    "sent_id": "sent_096",
+    "text_devanagari": "कानमा दुखाइ भयो।",
+    "text_romanized": "kānamā dukhāi bhayo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "कान",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/1"
+  },
+  {
+    "sent_id": "sent_097",
+    "text_devanagari": "रामले बाण चलाए।",
+    "text_romanized": "rāmale bāṇa calāe.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "बाण",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/2"
+  },
+  {
+    "sent_id": "sent_098",
+    "text_devanagari": "यो खराब बान हो।",
+    "text_romanized": "yo kharāba bāna ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "बान",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/2"
+  },
+  {
+    "sent_id": "sent_099",
+    "text_devanagari": "यो रङ राम्रो छ।",
+    "text_romanized": "yo raṅa rāmro cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "रङ",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/3"
+  },
+  {
+    "sent_id": "sent_100",
+    "text_devanagari": "उसले दुई रन बनायो।",
+    "text_romanized": "usale duī rana banāyo.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "रन",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/3"
+  },
+  {
+    "sent_id": "sent_101",
+    "text_devanagari": "गङ्गा पवित्र नदी हो।",
+    "text_romanized": "gaṅgā pavitra nadī ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "गङ्गा",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/4"
+  },
+  {
+    "sent_id": "sent_102",
+    "text_devanagari": "लुगा गन्दा भयो।",
+    "text_romanized": "lugā gandā bhayo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "गन्दा",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/4"
+  },
+  {
+    "sent_id": "sent_103",
+    "text_devanagari": "पञ्चले फैसला सुनाए।",
+    "text_romanized": "pañcale phaisalā sunāe.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "पञ्च",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/5"
+  },
+  {
+    "sent_id": "sent_104",
+    "text_devanagari": "यो धार्मिक पन्थ पुरानो हो।",
+    "text_romanized": "yo dhārmika pantha purāno ho.",
+    "word_count": 5,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "पन्थ",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/5"
+  },
+  {
+    "sent_id": "sent_105",
+    "text_devanagari": "मन्दिरमा पूजा गर।",
+    "text_romanized": "mandiramā pūjā gara.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "मन्दिर",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/6"
+  },
+  {
+    "sent_id": "sent_106",
+    "text_devanagari": "मण्डपमा विवाह भयो।",
+    "text_romanized": "maṇḍapamā vivāha bhayo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "मण्डप",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/6"
+  },
+  {
+    "sent_id": "sent_107",
+    "text_devanagari": "चन्दनको बोट मनपर्छ।",
+    "text_romanized": "candanako boṭa manaparcha.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "चन्दन",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/7"
+  },
+  {
+    "sent_id": "sent_108",
+    "text_devanagari": "चण्डी देवीको पूजा गरे।",
+    "text_romanized": "caṇḍī devīko pūjā gare.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "चण्डी",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/7"
+  },
+  {
+    "sent_id": "sent_109",
+    "text_devanagari": "तपाईं जानुहुन्छ?",
+    "text_romanized": "tapāīṃ jānuhuncha?",
+    "word_count": 2,
+    "category": "question_intonation",
+    "phonetic_targets": "[\"question_intonation\", \"yes_no_questions\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_110",
+    "text_devanagari": "खाना खानुभयो?",
+    "text_romanized": "khānā khānubhayo?",
+    "word_count": 2,
+    "category": "question_intonation",
+    "phonetic_targets": "[\"question_intonation\", \"yes_no_questions\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_111",
+    "text_devanagari": "को आयो?",
+    "text_romanized": "ko āyo?",
+    "word_count": 2,
+    "category": "question_intonation",
+    "phonetic_targets": "[\"question_intonation\", \"wh_questions\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_112",
+    "text_devanagari": "तपाईंको नाम के हो?",
+    "text_romanized": "tapāīṃko nāma ke ho?",
+    "word_count": 4,
+    "category": "question_intonation",
+    "phonetic_targets": "[\"question_intonation\", \"wh_questions\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_113",
+    "text_devanagari": "राम्रो छ, है?",
+    "text_romanized": "rāmro cha, hai?",
+    "word_count": 3,
+    "category": "question_intonation",
+    "phonetic_targets": "[\"question_intonation\", \"tag_questions\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_114",
+    "text_devanagari": "तिमी जान्छौ, हैन?",
+    "text_romanized": "timī jānchau, haina?",
+    "word_count": 3,
+    "category": "question_intonation",
+    "phonetic_targets": "[\"question_intonation\", \"tag_questions\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_115",
+    "text_devanagari": "उसले त्यो भन्यो?",
+    "text_romanized": "usale tyo bhanyo?",
+    "word_count": 3,
+    "category": "question_intonation",
+    "phonetic_targets": "[\"question_intonation\", \"echo_confirmation_questions\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_116",
+    "text_devanagari": "यो कसरी सम्भव छ र?",
+    "text_romanized": "yo kasarī sambhava cha ra?",
+    "word_count": 5,
+    "category": "question_intonation",
+    "phonetic_targets": "[\"question_intonation\", \"rhetorical_questions\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_117",
+    "text_devanagari": "चिया कि कफी?",
+    "text_romanized": "ciyā ki kaphī?",
+    "word_count": 3,
+    "category": "question_intonation",
+    "phonetic_targets": "[\"question_intonation\", \"alternative_questions\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_118",
+    "text_devanagari": "आज कि भोलि?",
+    "text_romanized": "āja ki bholi?",
+    "word_count": 3,
+    "category": "question_intonation",
+    "phonetic_targets": "[\"question_intonation\", \"alternative_questions\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_119",
+    "text_devanagari": "वाह, कति राम्रो खबर!",
+    "text_romanized": "vāha, kati rāmro khabara!",
+    "word_count": 4,
+    "category": "emotion",
+    "phonetic_targets": "[\"emotion\", \"happy\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_120",
+    "text_devanagari": "उहाँ अब हाम्रो बीचमा हुनुहुन्न।",
+    "text_romanized": "uhā̃ aba hāmro bīcamā hunuhunna.",
+    "word_count": 5,
+    "category": "emotion",
+    "phonetic_targets": "[\"emotion\", \"sad\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_121",
+    "text_devanagari": "यो कसरी स्वीकार्य हुन सक्छ?",
+    "text_romanized": "yo kasarī svīkārya huna sakcha?",
+    "word_count": 5,
+    "category": "emotion",
+    "phonetic_targets": "[\"emotion\", \"angry\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_122",
+    "text_devanagari": "के हुन्छ होला?",
+    "text_romanized": "ke huncha holā?",
+    "word_count": 3,
+    "category": "emotion",
+    "phonetic_targets": "[\"emotion\", \"fearful\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_123",
+    "text_devanagari": "अरे! तिमी यहाँ?",
+    "text_romanized": "are! timī yahā̃?",
+    "word_count": 3,
+    "category": "emotion",
+    "phonetic_targets": "[\"emotion\", \"surprised\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_124",
+    "text_devanagari": "आज मंगलबार हो।",
+    "text_romanized": "āja maṃgalabāra ho.",
+    "word_count": 3,
+    "category": "emotion",
+    "phonetic_targets": "[\"emotion\", \"calm\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_125",
+    "text_devanagari": "छिटो अस्पताल लैजाऊ!",
+    "text_romanized": "chiṭo aspatāla laijāū!",
+    "word_count": 3,
+    "category": "emotion",
+    "phonetic_targets": "[\"emotion\", \"urgent\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_126",
+    "text_devanagari": "दुःख नमान्नुहोस्, सबै ठीक हुन्छ।",
+    "text_romanized": "duḥkha namānnuhos, sabai ṭhīka huncha.",
+    "word_count": 5,
+    "category": "emotion",
+    "phonetic_targets": "[\"emotion\", \"sympathetic\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_137",
+    "text_devanagari": "रामले किताब किन्यो।",
+    "text_romanized": "rāmale kitāba kinyo.",
+    "word_count": 3,
+    "category": "contrastive_stress",
+    "phonetic_targets": "[\"contrastive_stress\", \"focus\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_138",
+    "text_devanagari": "सीताले भात पकाइन्।",
+    "text_romanized": "sītāle bhāta pakāin.",
+    "word_count": 3,
+    "category": "contrastive_stress",
+    "phonetic_targets": "[\"contrastive_stress\", \"focus\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_139",
+    "text_devanagari": "हरिले हिजो गाडी चलायो।",
+    "text_romanized": "harile hijo gāḍī calāyo.",
+    "word_count": 4,
+    "category": "contrastive_stress",
+    "phonetic_targets": "[\"contrastive_stress\", \"focus\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_140",
+    "text_devanagari": "सीताले भात पकाइन्।",
+    "text_romanized": "sītāle bhāta pakāin.",
+    "word_count": 3,
+    "category": "contrastive_stress",
+    "phonetic_targets": "[\"contrastive_stress\", \"corrective\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_141",
+    "text_devanagari": "उनी काठमाडौं गइन्।",
+    "text_romanized": "unī kāṭhamāḍauṃ gain.",
+    "word_count": 3,
+    "category": "contrastive_stress",
+    "phonetic_targets": "[\"contrastive_stress\", \"corrective\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_142",
+    "text_devanagari": "रामले मोटरसाइकल किन्यो।",
+    "text_romanized": "rāmale moṭarasāikala kinyo.",
+    "word_count": 3,
+    "category": "contrastive_stress",
+    "phonetic_targets": "[\"contrastive_stress\", \"corrective\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_143",
+    "text_devanagari": "ठूलो मान्छेको छोरा",
+    "text_romanized": "ṭhūlo māncheko chorā",
+    "word_count": 3,
+    "category": "contrastive_stress",
+    "phonetic_targets": "[\"contrastive_stress\", \"contrastive\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_144",
+    "text_devanagari": "नयाँ नेपालको कथा",
+    "text_romanized": "nayā̃ nepālako kathā",
+    "word_count": 3,
+    "category": "contrastive_stress",
+    "phonetic_targets": "[\"contrastive_stress\", \"contrastive\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_145",
+    "text_devanagari": "कच्चा काँचको कचौरा कच्चा काँचको कचौरा",
+    "text_romanized": "kaccā kā̃cako kacaurā kaccā kā̃cako kacaurā",
+    "word_count": 6,
+    "category": "robustness",
+    "phonetic_targets": "[\"robustness\", \"tongue_twisters\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_146",
+    "text_devanagari": "कछुवाको छालाको छत्रीमा कछुवा छ",
+    "text_romanized": "kachuvāko chālāko chatrīmā kachuvā cha",
+    "word_count": 5,
+    "category": "robustness",
+    "phonetic_targets": "[\"robustness\", \"tongue_twisters\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_147",
+    "text_devanagari": "राम रामले राम्रो रामको रामायण राम्ररी पढ्यो",
+    "text_romanized": "rāma rāmale rāmro rāmako rāmāyaṇa rāmrarī paḍhyo",
+    "word_count": 7,
+    "category": "robustness",
+    "phonetic_targets": "[\"robustness\", \"repetitive_sequences\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_148",
+    "text_devanagari": "हो।",
+    "text_romanized": "ho.",
+    "word_count": 1,
+    "category": "robustness",
+    "phonetic_targets": "[\"robustness\", \"very_short_utterances\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_149",
+    "text_devanagari": "छैन।",
+    "text_romanized": "chaina.",
+    "word_count": 1,
+    "category": "robustness",
+    "phonetic_targets": "[\"robustness\", \"very_short_utterances\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_150",
+    "text_devanagari": "विद्यालयव्यवस्थापनसमिति",
+    "text_romanized": "vidyālayavyavasthāpanasamiti",
+    "word_count": 1,
+    "category": "robustness",
+    "phonetic_targets": "[\"robustness\", \"long_compound_words\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_151",
+    "text_devanagari": "Facebook मा post गर्नुहोस्",
+    "text_romanized": "Facebook mā post garnuhos",
+    "word_count": 4,
+    "category": "robustness",
+    "phonetic_targets": "[\"robustness\", \"mixed_script_code_switched\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_152",
+    "text_devanagari": "Meeting cancel भयो, email check गर्नुस्",
+    "text_romanized": "Meeting cancel bhayo, email check garnus",
+    "word_count": 6,
+    "category": "robustness",
+    "phonetic_targets": "[\"robustness\", \"mixed_script_code_switched\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_153",
+    "text_devanagari": "अभिलेखागारमा पुरातात्त्विक दस्तावेजहरू सुरक्षित राखिएका छन्।",
+    "text_romanized": "abhilekhāgāramā purātāttvika dastāvejaharū surakṣita rākhiekā chan.",
+    "word_count": 6,
+    "category": "robustness",
+    "phonetic_targets": "[\"robustness\", \"rare_archaic_words\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_154",
+    "text_devanagari": "सर्वोच्च न्यायालयको न्यायाधीशले यथास्थितिमा रिट जारी गर्नुभयो।",
+    "text_romanized": "sarvocca nyāyālayako nyāyādhīśale yathāsthitimā riṭa jārī garnubhayo.",
+    "word_count": 7,
+    "category": "robustness",
+    "phonetic_targets": "[\"robustness\", \"rare_archaic_words\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_155",
+    "text_devanagari": "नमस्ते",
+    "text_romanized": "namaste",
+    "word_count": 1,
+    "category": "phrases",
+    "phonetic_targets": "[\"phrases\", \"greetings\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_156",
+    "text_devanagari": "नमस्कार",
+    "text_romanized": "namaskāra",
+    "word_count": 1,
+    "category": "phrases",
+    "phonetic_targets": "[\"phrases\", \"greetings\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_157",
+    "text_devanagari": "नमस्ते",
+    "text_romanized": "namaste",
+    "word_count": 1,
+    "category": "phrases",
+    "phonetic_targets": "[\"phrases\", \"farewells\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_158",
+    "text_devanagari": "धन्यवाद",
+    "text_romanized": "dhanyavāda",
+    "word_count": 1,
+    "category": "phrases",
+    "phonetic_targets": "[\"phrases\", \"thanks_and_gratitude\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_159",
+    "text_devanagari": "माफ गर्नुहोस्",
+    "text_romanized": "māpha garnuhos",
+    "word_count": 2,
+    "category": "phrases",
+    "phonetic_targets": "[\"phrases\", \"apologies\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_160",
+    "text_devanagari": "बधाई छ",
+    "text_romanized": "badhāī cha",
+    "word_count": 2,
+    "category": "phrases",
+    "phonetic_targets": "[\"phrases\", \"congratulations_and_wishes\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_161",
+    "text_devanagari": "कृपया",
+    "text_romanized": "kṛpayā",
+    "word_count": 1,
+    "category": "phrases",
+    "phonetic_targets": "[\"phrases\", \"polite_expressions\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_162",
+    "text_devanagari": "तपाईंलाई कस्तो छ?",
+    "text_romanized": "tapāīṃlāī kasto cha?",
+    "word_count": 3,
+    "category": "phrases",
+    "phonetic_targets": "[\"phrases\", \"common_conversational_phrases\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_163",
+    "text_devanagari": "सन्चै हुनुहुन्छ?",
+    "text_romanized": "sancai hunuhuncha?",
+    "word_count": 2,
+    "category": "phrases",
+    "phonetic_targets": "[\"phrases\", \"common_conversational_phrases\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_164",
+    "text_devanagari": "दशैंको शुभकामना",
+    "text_romanized": "daśaiṃko śubhakāmanā",
+    "word_count": 2,
+    "category": "phrases",
+    "phonetic_targets": "[\"phrases\", \"festival_and_seasonal_greetings\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_165",
+    "text_devanagari": "सरकारले नयाँ कर लगायो।",
+    "text_romanized": "sarakārale nayā̃ kara lagāyo.",
+    "word_count": 4,
+    "category": "homographs",
+    "phonetic_targets": "[\"homograph\", \"schwa_deletion\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_166",
+    "text_devanagari": "यो काम चाँडो कर।",
+    "text_romanized": "yo kāma cā̃ḍo kara.",
+    "word_count": 4,
+    "category": "homographs",
+    "phonetic_targets": "[\"homograph\", \"schwa_deletion\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_167",
+    "text_devanagari": "रुखमा फल पाकेको छ।",
+    "text_romanized": "rukhamā phala pākeko cha.",
+    "word_count": 4,
+    "category": "homographs",
+    "phonetic_targets": "[\"homograph\", \"schwa_deletion\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_168",
+    "text_devanagari": "मेहनतको फल मीठो हुन्छ।",
+    "text_romanized": "mehanatako phala mīṭho huncha.",
+    "word_count": 4,
+    "category": "homographs",
+    "phonetic_targets": "[\"homograph\", \"schwa_deletion\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_169",
+    "text_devanagari": "उसमा धेरै बल छ।",
+    "text_romanized": "usamā dherai bala cha.",
+    "word_count": 4,
+    "category": "homographs",
+    "phonetic_targets": "[\"homograph\", \"schwa_deletion\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_170",
+    "text_devanagari": "बत्ती बल, अँध्यारो छ।",
+    "text_romanized": "battī bala, ãdhyāro cha.",
+    "word_count": 4,
+    "category": "homographs",
+    "phonetic_targets": "[\"homograph\", \"schwa_deletion\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_171",
+    "text_devanagari": "पूर्वाधारकै अभावमा प्रदेश राजधानी सुर्खेत",
+    "text_romanized": "pūrvādhārakai abhāvamā pradeśa rājadhānī surkheta",
+    "word_count": 5,
+    "category": "newspaper_ambiguities",
+    "phonetic_targets": "[\"formal\", \"newspaper\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_172",
+    "text_devanagari": "प्रतिस्पर्धामा बिजुली किन्ने प्राधिकरणको दोस्रो प्रस्तावमा पनि भारतीय कम्पनीले देखाएनन् चासो",
+    "text_romanized": "pratispardhāmā bijulī kinne prādhikaraṇako dosro prastāvamā pani bhāratīya kampanīle dekhāenan cāso",
+    "word_count": 11,
+    "category": "newspaper_ambiguities",
+    "phonetic_targets": "[\"formal\", \"newspaper\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_173",
+    "text_devanagari": "निर्वाचनमा सञ्चारकर्मीमाथिको भौतिक आक्रमणप्रति सरोकारवालाको गम्भीर चिन्ता",
+    "text_romanized": "nirvācanamā sañcārakarmīmāthiko bhautika ākramaṇaprati sarokāravālāko gambhīra cintā",
+    "word_count": 7,
+    "category": "newspaper_ambiguities",
+    "phonetic_targets": "[\"formal\", \"newspaper\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_174",
+    "text_devanagari": "चुनावीको र्‍यालीका सहभागी सवार बस दुर्घटना, २९ जना घाईते",
+    "text_romanized": "cunāvīko ryālīkā sahabhāgī savāra basa durghaṭanā,  janā ghāīte",
+    "word_count": 9,
+    "category": "newspaper_ambiguities",
+    "phonetic_targets": "[\"formal\", \"newspaper\"]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "sent_175",
+    "text_devanagari": "हात्तीको सुडले पानी तान्यो।",
+    "text_romanized": "hattiko sudle pani tanyo.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"retroflex_vs_dental\", \"minimal_pair\"]",
+    "contrast_word": "सुड",
+    "pair_id": "phonological_minimal_pairs/retroflex_vs_dental/4_b"
+  },
+  {
+    "sent_id": "sent_176",
+    "text_devanagari": "बैंकको सुद बढ्यो।",
+    "text_romanized": "baimkko suda badhyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"retroflex_vs_dental\", \"minimal_pair\"]",
+    "contrast_word": "सुद",
+    "pair_id": "phonological_minimal_pairs/retroflex_vs_dental/4_b"
+  },
+  {
+    "sent_id": "sent_177",
+    "text_devanagari": "सडक निर्माण भइरहेको छ।",
+    "text_romanized": "sadaka nirmana bhairaheko cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"schwa_deletion\", \"minimal_pair\"]",
+    "contrast_word": "सडक",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/2_b"
+  },
+  {
+    "sent_id": "sent_178",
+    "text_devanagari": "सड्कमा गाडी धेरै छ।",
+    "text_romanized": "sadkama gadi dherai cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"schwa_deletion\", \"minimal_pair\"]",
+    "contrast_word": "सड्क",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/2_b"
+  },
+  {
+    "sent_id": "sent_179",
+    "text_devanagari": "समय बित्यो।",
+    "text_romanized": "samaya bityo.",
+    "word_count": 2,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"schwa_deletion\", \"minimal_pair\"]",
+    "contrast_word": "समय",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/3_b"
+  },
+  {
+    "sent_id": "sent_180",
+    "text_devanagari": "सम्य छैन अहिले।",
+    "text_romanized": "samya chain ahile.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"schwa_deletion\", \"minimal_pair\"]",
+    "contrast_word": "सम्य",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/3_b"
+  },
+  {
+    "sent_id": "sent_181",
+    "text_devanagari": "ऊ गोर मान्छे हो।",
+    "text_romanized": "ū gora mānche ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_velar\", \"minimal_pair\"]",
+    "contrast_word": "गोर",
+    "pair_id": "phonological_minimal_pairs/aspiration_velar/3_b"
+  },
+  {
+    "sent_id": "sent_182",
+    "text_devanagari": "यो घोर अपराध हो।",
+    "text_romanized": "yo ghora aparādha ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_velar\", \"minimal_pair\"]",
+    "contrast_word": "घोर",
+    "pair_id": "phonological_minimal_pairs/aspiration_velar/3_b"
+  },
+  {
+    "sent_id": "sent_183",
+    "text_devanagari": "उसले काम टाल्यो।",
+    "text_romanized": "usale kāma ṭālyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "टाल",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/0_b"
+  },
+  {
+    "sent_id": "sent_184",
+    "text_devanagari": "उसले काम ठाल्यो।",
+    "text_romanized": "usale kāma ṭhālyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "ठाल",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/0_b"
+  },
+  {
+    "sent_id": "sent_185",
+    "text_devanagari": "डाँडामा बस्ती छ।",
+    "text_romanized": "ḍā̃ḍāmā bastī cha.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "डाँडा",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/2_b"
+  },
+  {
+    "sent_id": "sent_186",
+    "text_devanagari": "यो नयाँ ढाँडा हो।",
+    "text_romanized": "yo nayā̃ ḍhā̃ḍā ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "ढाँडा",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/2_b"
+  },
+  {
+    "sent_id": "sent_187",
+    "text_devanagari": "ढोकीमा धान कुट।",
+    "text_romanized": "ḍhokīmā dhāna kuṭa.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_retroflex\", \"minimal_pair\"]",
+    "contrast_word": "ढोकी",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/4_b"
+  },
+  {
+    "sent_id": "sent_188",
+    "text_devanagari": "राजनीतिक दल बन्यो।",
+    "text_romanized": "rājanītika dala banyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_dental\", \"minimal_pair\"]",
+    "contrast_word": "दल",
+    "pair_id": "phonological_minimal_pairs/aspiration_dental/4_b"
+  },
+  {
+    "sent_id": "sent_189",
+    "text_devanagari": "पर्खाल धल्यो।",
+    "text_romanized": "parkhāla dhalyo.",
+    "word_count": 2,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_dental\", \"minimal_pair\"]",
+    "contrast_word": "धल",
+    "pair_id": "phonological_minimal_pairs/aspiration_dental/4_b"
+  },
+  {
+    "sent_id": "sent_190",
+    "text_devanagari": "स्विमिङ पूलमा पौडी खेल।",
+    "text_romanized": "swimiṅ pūlamā pauḍī khela.",
+    "word_count": 5,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_labial\", \"minimal_pair\"]",
+    "contrast_word": "पूल",
+    "pair_id": "phonological_minimal_pairs/aspiration_labial/1_b"
+  },
+  {
+    "sent_id": "sent_191",
+    "text_devanagari": "फूल फुलेको छ।",
+    "text_romanized": "phūla phuleko cha.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"aspiration_labial\", \"minimal_pair\"]",
+    "contrast_word": "फूल",
+    "pair_id": "phonological_minimal_pairs/aspiration_labial/1_b"
+  },
+  {
+    "sent_id": "sent_192",
+    "text_devanagari": "दशैँ ठूलो चाद हो।",
+    "text_romanized": "daśaĩ ṭhūlo cāda ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"oral_vs_nasal_vowel\", \"minimal_pair\"]",
+    "contrast_word": "चाद",
+    "pair_id": "phonological_minimal_pairs/oral_vs_nasal_vowel/2_b"
+  },
+  {
+    "sent_id": "sent_193",
+    "text_devanagari": "पाटो बाख्रा बिक्यो।",
+    "text_romanized": "pāṭo bākhrā bikyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"retroflex_vs_dental\", \"minimal_pair\"]",
+    "contrast_word": "पाटो",
+    "pair_id": "phonological_minimal_pairs/retroflex_vs_dental/3_b"
+  },
+  {
+    "sent_id": "sent_194",
+    "text_devanagari": "रूखको पातो खसिरहेको छ।",
+    "text_romanized": "rūkhako pāto khasiraheko cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"retroflex_vs_dental\", \"minimal_pair\"]",
+    "contrast_word": "पातो",
+    "pair_id": "phonological_minimal_pairs/retroflex_vs_dental/3_b"
+  },
+  {
+    "sent_id": "sent_195",
+    "text_devanagari": "भात पका।",
+    "text_romanized": "bhāta pakā.",
+    "word_count": 2,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"gemination\", \"minimal_pair\"]",
+    "contrast_word": "पका",
+    "pair_id": "phonological_minimal_pairs/gemination/1_b"
+  },
+  {
+    "sent_id": "sent_196",
+    "text_devanagari": "यो कुरा पक्का हो।",
+    "text_romanized": "yo kurā pakkā ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"gemination\", \"minimal_pair\"]",
+    "contrast_word": "पक्का",
+    "pair_id": "phonological_minimal_pairs/gemination/1_b"
+  },
+  {
+    "sent_id": "sent_197",
+    "text_devanagari": "पानी परेपछि छाता लगाउ।",
+    "text_romanized": "pānī parepachi chātā lagāu.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"gemination\", \"minimal_pair\"]",
+    "contrast_word": "छाता",
+    "pair_id": "phonological_minimal_pairs/gemination/4_b"
+  },
+  {
+    "sent_id": "sent_198",
+    "text_devanagari": "जंगलमा छात्ता उम्रिएको छ।",
+    "text_romanized": "jaṃgalamā chāttā umrieko cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"gemination\", \"minimal_pair\"]",
+    "contrast_word": "छात्ता",
+    "pair_id": "phonological_minimal_pairs/gemination/4_b"
+  },
+  {
+    "sent_id": "sent_199",
+    "text_devanagari": "मेरो मन दुखेको छ।",
+    "text_romanized": "mero mana dukheko cha.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "मन",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/0_b"
+  },
+  {
+    "sent_id": "sent_200",
+    "text_devanagari": "एक मण चामल ल्याउ।",
+    "text_romanized": "eka maṇa cāmala lyāu.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "मण",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/0_b"
+  },
+  {
+    "sent_id": "sent_201",
+    "text_devanagari": "कनमा दुखाइ भयो।",
+    "text_romanized": "kanamā dukhāi bhayo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "कन",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/1_b"
+  },
+  {
+    "sent_id": "sent_202",
+    "text_devanagari": "यो खराब बान हो।",
+    "text_romanized": "yo kharāba bāna ho.",
+    "word_count": 4,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "बान",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/2_b"
+  },
+  {
+    "sent_id": "sent_203",
+    "text_devanagari": "टायरमा पन्चर लाग्यो।",
+    "text_romanized": "ṭāyaramā pancara lāgyo.",
+    "word_count": 3,
+    "category": "phonological_minimal_pairs",
+    "phonetic_targets": "[\"nasal_consonants\", \"minimal_pair\"]",
+    "contrast_word": "पन्च",
+    "pair_id": "phonological_minimal_pairs/nasal_consonants/5_b"
+  },
+  {
+    "sent_id": "chirp_001",
+    "text_devanagari": "सम्झिदा रुन मन लाग्छ।",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_002",
+    "text_devanagari": "सुतिरै निक्लिनु पर्ने रैछ।",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_003",
+    "text_devanagari": "कोरोनाको उपचार के हुन्छ?",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_004",
+    "text_devanagari": "युवाहरु भलिबल खेल्दै थिए।",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_005",
+    "text_devanagari": "कहा को जन्म हो",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_006",
+    "text_devanagari": "तर मधेरु नजिक छैन।",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_007",
+    "text_devanagari": "बागबनाबाट सफर सुरु भयो।",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_008",
+    "text_devanagari": "त्यो भनेको बोलाको हो?",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_009",
+    "text_devanagari": "नदीले बाटो पनि छेकिदिन्छ।",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_010",
+    "text_devanagari": "वहाँ मेरो आन्टी हुन्छ।",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_011",
+    "text_devanagari": "बस्ती बिस्तारै गाउँ बोक्छ।",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_012",
+    "text_devanagari": "चाइनिज भरी भनेको हो।",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_013",
+    "text_devanagari": "तरकारी अब लैजाइद होइछ।",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_014",
+    "text_devanagari": "कठिनाइहरुलाई हासेरै अंगाले हिड्छु",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_015",
+    "text_devanagari": "अब के सिक्का हो?",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_016",
+    "text_devanagari": "कहाँ देखि ल्याउनु भयो?",
+    "text_romanized": "",
+    "word_count": 4,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_017",
+    "text_devanagari": "अष्ट अरुको दिमागमा घन्टी बजाउँछ।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_018",
+    "text_devanagari": "ओ सरपंच अली कहाँ छ?",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_019",
+    "text_devanagari": "क्या खाना पाइन्छ त? पाइन्छ?",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_020",
+    "text_devanagari": "नौलीले चिटा खोलेर हेर्दा हुन्छ।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_021",
+    "text_devanagari": "रुन चै त्यो सम्झिना आउछ।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_022",
+    "text_devanagari": "तपाईको प्रेसर अलि कमै रैछ।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_023",
+    "text_devanagari": "ढुंगा को धारो पनि छौ।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_024",
+    "text_devanagari": "नियाली जाउँछ। झन् गरुम भन्छ।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_025",
+    "text_devanagari": "लगभग तीन जना परिवार छन्।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_026",
+    "text_devanagari": "हाम्रो गन्तव्य त मुगु थियो।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_027",
+    "text_devanagari": "प्लेनहरु उडी राखी कोनी थियो?",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_028",
+    "text_devanagari": "रारा ताल कुन जिल्लामा पर्छ?",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_029",
+    "text_devanagari": "आखिर धन तथा कुकुरमा उत्रेछ।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_030",
+    "text_devanagari": "साँझको दूध धुने बेला भयो।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_031",
+    "text_devanagari": "झ्यालबाट निस्किन्छन् र क्याम्पस जान्छन्।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_032",
+    "text_devanagari": "गाउँमा धेरै जसो यादवहरु बस्छन्।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_033",
+    "text_devanagari": "त्यही बस्छु भने जस्तो छ।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_034",
+    "text_devanagari": "नेपालको सम्झनाले बेलाबेला भक्कानो छुटाउँछ।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_035",
+    "text_devanagari": "छोड त म यो उठाउँछु।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_036",
+    "text_devanagari": "फौजदार पनि जमानाका खेलाडी रहेछन्।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_037",
+    "text_devanagari": "सन्चो छैन देखाउने घाउ छैन",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_038",
+    "text_devanagari": "मान्छेहरु कतै झर्छन् कतै चढ्छन्।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_039",
+    "text_devanagari": "क्या यारो त कान छ?",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_040",
+    "text_devanagari": "बाबाले निफे काँगको चाही भन्नुहुन्छ।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_041",
+    "text_devanagari": "अब यो तपाईंलाई थाहा छ।",
+    "text_romanized": "",
+    "word_count": 5,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_042",
+    "text_devanagari": "हत्याको जिम्मा लिएर कटगरामा उभिनु पर्छ।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_043",
+    "text_devanagari": "अ बुद्धेको आमा। सन्चै हुनुहुन्छ? छन्?",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_044",
+    "text_devanagari": "निमा दिदीको घरमा ढिडो पाक्दै छ।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_045",
+    "text_devanagari": "आज हामी यी साथीका कथा देखाउछौ।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_046",
+    "text_devanagari": "आउँछ भने दिनु। आवाज दे। आउँछ?",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_047",
+    "text_devanagari": "यस्तो गर्दा त मान्छे बुढी हाल्छ।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_048",
+    "text_devanagari": "अनौठा बाबा गडमा दबाउँदै लिएर आउँछ।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_049",
+    "text_devanagari": "सकिला मियाका श्रीमान बम्बईमै बितेका रहेछन्।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_050",
+    "text_devanagari": "स्कुलमा बिहानीको पढाइ छ। छिट्टै उठ्नुपर्छ।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_051",
+    "text_devanagari": "यस हो त्यहाँ अझै सुकुन हो।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_052",
+    "text_devanagari": "रविताहरु भने तस्बिरै तस्बिरहरुले सजिएको थियो।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_053",
+    "text_devanagari": "कालिपारी नेपालका विद्यालयहरुमा इतिहास पढाइदै छ।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_054",
+    "text_devanagari": "साँझसम्म राउटेहरु घर बनाउनमै व्यस्त थिए।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_055",
+    "text_devanagari": "भोलि फागुनाको कुनै पोस्टेड भिडियो छैन।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_056",
+    "text_devanagari": "साँझ अबेरसम्म वस्तुहरु पुल तर्दै थिए।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_057",
+    "text_devanagari": "आफ्ता १५ दिन मात्र खास हुनुभयो।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_058",
+    "text_devanagari": "लगाएर एता बडो खुल्ला छ। हो?",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_059",
+    "text_devanagari": "अब योङस्टरहरुलाई हाम्रो स्कुलमा पढाउने हो।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_060",
+    "text_devanagari": "पानी परेकाले आज अलिक ढिला भयो।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_061",
+    "text_devanagari": "के भो तिम्रो नाम के हो?",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_062",
+    "text_devanagari": "बताएर घर बनाएर खेला जस्तो छ।",
+    "text_romanized": "",
+    "word_count": 6,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_063",
+    "text_devanagari": "बिहान आयो भने फेरि घर तयार हुन्छ।",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_064",
+    "text_devanagari": "आफ्नो इच्छा हो जहाँ पनि बस्न पाइन्छ।",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_065",
+    "text_devanagari": "मेरो गाउँको मान्छे होइन। काको मान्छे हो?",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_066",
+    "text_devanagari": "स्टप दिस अब त अति नै भयो।",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_067",
+    "text_devanagari": "हो हो हो, यतिखेर वडै त्यति हो।",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_068",
+    "text_devanagari": "त्यहाँबाट केही डाँडा पारी मारमा गाउँपालिका छ।",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_069",
+    "text_devanagari": "जनकपुरको पिडारी चोक नजिकै पछुवाडी टोल छ।",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_070",
+    "text_devanagari": "मेला जात्रामा दोहोरी शैलीमा गाउँदै देउडा नाचिन्छ।",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_071",
+    "text_devanagari": "दाङको लमही बजारमै अनमोल मोटरसाइकल वर्कशप छ।",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_072",
+    "text_devanagari": "त्यसैले म केही पनि किचेर हेर्दा हुन्छ।",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_073",
+    "text_devanagari": "कोई कोई ठाउँमा हुन्छ। कोई चाइनामा हुन्छ।",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_074",
+    "text_devanagari": "चल मतलब डॉक्टर होनी। के भने हो?",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_075",
+    "text_devanagari": "पक्कैले किसान। कहिले उनी जेरी बेल्दै हुन्छन्?",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_076",
+    "text_devanagari": "सल्लाहका सुरिला बोटहरु जाडोले कठ्याङ रिएका छन्।",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_077",
+    "text_devanagari": "सुनसरीका पत्रकार साथीहरु पनि हामी सँगै थिए।",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_078",
+    "text_devanagari": "सपना जस्तै भएछ है। सपना जस्तै भयो।",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_079",
+    "text_devanagari": "कतिपय वरपरका गाउँबाट दिनहुँ आउने जाने गर्छन्।",
+    "text_romanized": "",
+    "word_count": 7,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_080",
+    "text_devanagari": "यसको नेतृत्व पनि तिनै टम डोर्चेले गरेका थिए",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_081",
+    "text_devanagari": "र यो हामीले वर्षभरिमा खाने चाउचोको नम्बर हो।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_082",
+    "text_devanagari": "तर पनि यो सँगै बिपिनको कथा यही टुंगिन्छ।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_083",
+    "text_devanagari": "बैजनाथ यहाँ गाउँका भाइहरूलाई सधैँ यसरी कुस्ती सिकाउँछन्।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_084",
+    "text_devanagari": "यहाँ नै कुहिरो छिचोल्दै भिजलपुराबाट रेलगाडी गुड्न थाल्छ।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_085",
+    "text_devanagari": "के गर्नु? सामान नै पर्दछ। गरेपछि सामान पर्दछ।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_086",
+    "text_devanagari": "खै के सम्झे रहो मुस्कान बा मुस्काई रहन्छन्।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_087",
+    "text_devanagari": "एका बिहानै आमा छोरा घर धन्दामा व्यस्त थिए।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_088",
+    "text_devanagari": "तारो खेल्न स्थानीय प्रशासनले ठाउँ नै छुट्याइदिएको छ।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_089",
+    "text_devanagari": "पुन्जोलाई अब एकपटक आफ्नै कीर्तिमान तोड्न मन छ।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_090",
+    "text_devanagari": "एसो त यो ट्याङ्की नै कराउने नै रैछ।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_091",
+    "text_devanagari": "टापुका दूध बर्मजिया सम्म पुग्छन् अनि पेडा बन्छन्।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_092",
+    "text_devanagari": "साँझ आधा उधी गाउँ मुखियाको आँगनमा भेला भयो।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_093",
+    "text_devanagari": "हिउँ जमेको ठाउँमा चाहिँ घोडालाई अप्ठ्यारो हुने रहेछ।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_094",
+    "text_devanagari": "गोडा धुने काम सकिएपछि अन्माउने तयारी सुरु भयो।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_095",
+    "text_devanagari": "पारले परे हजुर बच्चा बुच्ची पराउने परे हो।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_096",
+    "text_devanagari": "कसैले साथ लेर जाने छोरा छोरी परिणाम छ।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_097",
+    "text_devanagari": "जीवन हो घाम छाया सुख दुख दुवै हुन्छ",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_098",
+    "text_devanagari": "अरु नदी जस्तै बागमतीका पानीमा धेरैको आस्था बग्छ।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_099",
+    "text_devanagari": "मचेलो डिस ब्रेक भन्ने त्यो सुअर चेंज गरिराछु।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_100",
+    "text_devanagari": "यो छोडाई छैन भरे त्यहि टिका छोडौ भन्छ।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_101",
+    "text_devanagari": "जॉबलेस भएर हिँडिरहेको बेला म कहाँ आउनु हो?",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_102",
+    "text_devanagari": "त्यो दिदी कति दिदी कति त भन्दै हुनुहुन्छ?",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_103",
+    "text_devanagari": "तेस्को यो सिनमा लीड कैरेक्टर नेपालको पाटनमा हुन्छ।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_104",
+    "text_devanagari": "सगरमाथाको टुप्पो सम्म पुग्न उनलाई ३९ घण्टा लागेछ।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_105",
+    "text_devanagari": "चीनको सिमासम्म पुग्ने बाटो भारतले धमाधम बनाउँदै थियो।",
+    "text_romanized": "",
+    "word_count": 8,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_106",
+    "text_devanagari": "बर्दियाको राजापुर कर्णाली नदीकै किनारमा एउटा चिटिक्कको गाउँ छ।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_107",
+    "text_devanagari": "नेपालमा नै भएको थियो। हिन्दुस्तान पाकिस्तानकी आवामका भला चाहन्छ।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_108",
+    "text_devanagari": "छोरा लाई डाक्टर बनाउने पनि यही हो। यही हो।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_109",
+    "text_devanagari": "अल्लो घाडीहरु छिचोल्दै उकालो लाग्दा मौसम ओसिलो हुँदै गयो।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_110",
+    "text_devanagari": "बुवा विदेश जानु भयो। उसमा के बन्ने इच्छा छ?",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_111",
+    "text_devanagari": "अरु के साइड लाइट पनि बल्लै न भन्नु भयो।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_112",
+    "text_devanagari": "तर बाटोले नै साथ नदिएपछि यात्रुको केही नलाग्ने रहेछ।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_113",
+    "text_devanagari": "गाउँघरका अरु महिलाहरु पनि उनको सिको गर्न थालेका छन्।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_114",
+    "text_devanagari": "हामीसँग भोजपुरबाट आएको टोली चाहिँ आजै बांगे पुगिसकेको छ।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_115",
+    "text_devanagari": "म उभिदिएर चारजनाको भलो भयो भने त्यही भला हो।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_116",
+    "text_devanagari": "चुम्भ्यालीको अन्तिम गाउँ निले पुग्दा झमक साँझ परेको थियो।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_117",
+    "text_devanagari": "यो गाउँमा देखिन थालेका सानातिना परिवर्तनले उनीहरुलाई उर्जा दिन्छ।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_118",
+    "text_devanagari": "सबैका आकर्षण ईश्वर सानो झोलाबाट लाली पाउडरहरु निकाल्दै छन्।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_119",
+    "text_devanagari": "जम्मा खतरा भ्यागुत्ता चाहिँ परेछ। माछा माछा भ्यागुत्ता भएछ।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_120",
+    "text_devanagari": "भोलि जन्ती आउनेछ। आज अबेरसम्म आँगनमा ताते पाक्दै छ।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_121",
+    "text_devanagari": "यो त भयो टेलरको कथा। फिल्म अब सुरु हुन्छ।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_122",
+    "text_devanagari": "यसलाई नेपालकै सबैभन्दा लामो सिंगल स्पान झोलुङ्गे पुल मानिन्छ।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_123",
+    "text_devanagari": "अथा अथा एक मुखे त अहिले सम्म भेटेकै छैन।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_124",
+    "text_devanagari": "आज संजयकी श्रीमती र छोरी उनलाई भेट्न आउँदै छन्।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_125",
+    "text_devanagari": "देवताहरुका प्रिय प्रियदर्शी अशोक राजाको राज्यकालको २०औं वर्षमा आफ्याउनुभयो।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_126",
+    "text_devanagari": "राजेश मुखिया श्रीमती र छोरा सहित बालुवामा खटेका छन्।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_127",
+    "text_devanagari": "खोलामा पुल थिएन। मान्छेहरु डुङ्गा चढेर वारपार गर्दै थिए।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_128",
+    "text_devanagari": "गजेन्द्र सर आए यता शिवका दाजुभाई नियमित स्कूल जान्छन्।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_129",
+    "text_devanagari": "यही समयमा उनका कन्सेप्टहरुमा पनि उनको फरक रूप देखिन्छ।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_130",
+    "text_devanagari": "साजन 9:00 तिर हाफ टाइममा साइकल कुदाउँदै घर आउँछन्।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_131",
+    "text_devanagari": "लुगलुग कामले जाडोमा जागरीला गाउलेहरु एका बिहानै उठिसकेका थिए।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_132",
+    "text_devanagari": "एउटा गरिब देशको प्रधानमन्त्री केपी शर्मा ओलीसँग कुराकानी गर्दैछन्।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_133",
+    "text_devanagari": "तर फर्किदै गर्दा राजमार्गमै एउटा बाघले हामीलाई पर्खिरहेको थियो।",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_134",
+    "text_devanagari": "के कराए? रोटी पकाउन लागेको हो? रोटी पकाउन आउँछ?",
+    "text_romanized": "",
+    "word_count": 9,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_135",
+    "text_devanagari": "सुरुवात त लगभग ते पांच वर्ष पांच वर्ष जति भयो।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_136",
+    "text_devanagari": "सिराहाका देवनारायण गडेरी र उनकी पत्नी बबिताको यो कर्मभूमि हो।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_137",
+    "text_devanagari": "विश्वनाथ मान्छेका शरीरका अंग अंग चिरेर डाक्टरलाई मृत्युका सबूत देखाइदिन्छन्।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_138",
+    "text_devanagari": "त कतै कोइ इन्डोनेसियाको बोटबोइ जस्तो औरा फार्मिंग गर्दै थियो।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_139",
+    "text_devanagari": "ईश्वरको बन्दना अर्थात् तराना गाउने पालो आज सायजा नजिसको हो।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_140",
+    "text_devanagari": "बाराको कोल्बी नगरपालिकाको बोधवन गाउँ माछा पालेर सुखी भएको छ।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_141",
+    "text_devanagari": "उनीहरुका जिन्दगीका अधिकांश सम्झनाहरु कुकुरसँगै जोडिएका छन्। हरेकका कथा छन्।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_142",
+    "text_devanagari": "अब के था अब 5 सालमा उ तयार हुने हो।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_143",
+    "text_devanagari": "यहाँको अवस्था जस्तो सौदीको हो। और एक साल पानी आउछ।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_144",
+    "text_devanagari": "ठूलो भंगालो तरेर श्रीलंका टापु पुग्दा साँझ पर्न लागेको थियो।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_145",
+    "text_devanagari": "बगरको बीचमा रहेको ठूलो सिमलको रुख काट्ने सुरसार हुँदै थियो।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_146",
+    "text_devanagari": "अछामको चौखुट्टेमा कसिनी गाउँ छ। टेकबहादुर साउदको घर त्यही छ।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_147",
+    "text_devanagari": "रातभरि चढेर फर्किएका हात्तीहरु भोलिपल्ट झुल्के घामसँगै जंगलतिर छिर्दै थिए।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_148",
+    "text_devanagari": "आजकल छपिया गाउँमा साना देखि ठूला माछा रिसोर्टहरु थुप्रै देखिन्छन्।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_149",
+    "text_devanagari": "म्यान्गलुङ बजार र प र पाँचथरका डाँडाहरुलाई कुइरोले ढाकेको छ।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_150",
+    "text_devanagari": "फार्ममा लगाएका किवीका बोटहरुलाई पनि उनले छोराछोरी जस्तै सिहारेका छन्।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_151",
+    "text_devanagari": "गाईहरु लस्करै लाइन लागेर नुहाउँदै दुध दुहुने मेसिन अगाडि उभिन्छन्।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_152",
+    "text_devanagari": "पहिला पहिला त युनिअरोट देख्दै देख्दै नदियो भानमा मातृ हो।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_153",
+    "text_devanagari": "वीरगंज महानगरबाट २७ किलोमिटर टाढा जंगलको छेउमा बागबना गाउँ छ।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_154",
+    "text_devanagari": "कराईमा ताती झैँया गर्छ। महिलाहरु लय हालेर चाँची भन्दै छन्।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_155",
+    "text_devanagari": "अनुभव नभएका हामीलाई पौडी खेल्न नजान्नेलाई पोखरीमा फाल्दिए जस्तै भयो।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_156",
+    "text_devanagari": "राजावादी समूहले काठमाडौँको तीनकुनेमा गरेको प्रदर्शनमा परि दुईजनाको मृत्यु भयो।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_157",
+    "text_devanagari": "नेपालमाथि भारतीय नाकाबन्दीको कथा विक्रम संवत २०१९ देखि सुरु हुन्छ।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_158",
+    "text_devanagari": "गाउँका अरु पाका महिलाहरु पनि धमाधम पुरुषको भेष धारण गर्दैछन्।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_159",
+    "text_devanagari": "जिन्दगीभरि जमिन्दारको घरमा हरुवा चरुवा बसेका परशुराम अहिले स्वतन्त्र छन्।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "sent_id": "chirp_160",
+    "text_devanagari": "झापा र मोरङको सिमाना रहेको रतुवा पुल पनि अलपत्र रहेछ।",
+    "text_romanized": "",
+    "word_count": 10,
+    "category": "natural_speech",
+    "phonetic_targets": "[]",
+    "contrast_word": "",
+    "pair_id": ""
+  },
+  {
+    "text_devanagari": "जार राख्नु पाप हो।",
+    "text_romanized": "jāra rākhnu pāpa ho.",
+    "category": "phonological_minimal_pairs",
+    "contrast_word": "जार",
+    "pair_id": "phonological_minimal_pairs/aspiration_palatal/3_new",
+    "sent_id": "sent_204",
+    "word_count": 4,
+    "phonetic_targets": "[]"
+  },
+  {
+    "text_devanagari": "बारीको झार उखेल।",
+    "text_romanized": "bārīko jhāra ukhela.",
+    "category": "phonological_minimal_pairs",
+    "contrast_word": "झार",
+    "pair_id": "phonological_minimal_pairs/aspiration_palatal/3_new",
+    "sent_id": "sent_205",
+    "word_count": 3,
+    "phonetic_targets": "[]"
+  },
+  {
+    "text_devanagari": "कुकुरले टोक्यो।",
+    "text_romanized": "kukurale ṭokyo.",
+    "category": "phonological_minimal_pairs",
+    "contrast_word": "टोक",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/1_new",
+    "sent_id": "sent_206",
+    "word_count": 2,
+    "phonetic_targets": "[]"
+  },
+  {
+    "text_devanagari": "किला ठोक।",
+    "text_romanized": "kilā ṭhoka.",
+    "category": "phonological_minimal_pairs",
+    "contrast_word": "ठोक",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/1_new",
+    "sent_id": "sent_207",
+    "word_count": 2,
+    "phonetic_targets": "[]"
+  },
+  {
+    "text_devanagari": "नदीमा डुङ्गा चल्छ।",
+    "text_romanized": "nadīmā ḍuṅgā calcha.",
+    "category": "phonological_minimal_pairs",
+    "contrast_word": "डुङ्गा",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/4_new",
+    "sent_id": "sent_208",
+    "word_count": 3,
+    "phonetic_targets": "[]"
+  },
+  {
+    "text_devanagari": "बाटोमा ढुङ्गा छ।",
+    "text_romanized": "bāṭomā ḍhuṅgā cha.",
+    "category": "phonological_minimal_pairs",
+    "contrast_word": "ढुङ्गा",
+    "pair_id": "phonological_minimal_pairs/aspiration_retroflex/4_new",
+    "sent_id": "sent_209",
+    "word_count": 3,
+    "phonetic_targets": "[]"
+  },
+  {
+    "text_devanagari": "उसको जनम भर्खरै भयो।",
+    "text_romanized": "usako janama bharkharai bhayo.",
+    "category": "phonological_minimal_pairs",
+    "contrast_word": "जनम",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/0_new",
+    "sent_id": "sent_210",
+    "word_count": 4,
+    "phonetic_targets": "[]"
+  },
+  {
+    "text_devanagari": "जन्म दिनको शुभकामना।",
+    "text_romanized": "janma dinako śubhakāmanā.",
+    "category": "phonological_minimal_pairs",
+    "contrast_word": "जन्म",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/0_new",
+    "sent_id": "sent_211",
+    "word_count": 3,
+    "phonetic_targets": "[]"
+  },
+  {
+    "text_devanagari": "आज गरम छ।",
+    "text_romanized": "āja garama cha.",
+    "category": "phonological_minimal_pairs",
+    "contrast_word": "गरम",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/1_new",
+    "sent_id": "sent_212",
+    "word_count": 3,
+    "phonetic_targets": "[]"
+  },
+  {
+    "text_devanagari": "चिया गर्म छ।",
+    "text_romanized": "ciyā garma cha.",
+    "category": "phonological_minimal_pairs",
+    "contrast_word": "गर्म",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/1_new",
+    "sent_id": "sent_213",
+    "word_count": 3,
+    "phonetic_targets": "[]"
+  },
+  {
+    "text_devanagari": "यो तकिया नरम छ।",
+    "text_romanized": "yo takiyā narama cha.",
+    "category": "phonological_minimal_pairs",
+    "contrast_word": "नरम",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/3_b_new",
+    "sent_id": "sent_214",
+    "word_count": 4,
+    "phonetic_targets": "[]"
+  },
+  {
+    "text_devanagari": "नर्म स्वभावले सबैलाई जित्छ।",
+    "text_romanized": "narma svabhāvale sabailāī jitcha.",
+    "category": "phonological_minimal_pairs",
+    "contrast_word": "नर्म",
+    "pair_id": "phonological_minimal_pairs/schwa_deletion/3_b_new",
+    "sent_id": "sent_215",
+    "word_count": 4,
+    "phonetic_targets": "[]"
+  }
+]

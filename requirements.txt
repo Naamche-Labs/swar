@@ -1,0 +1,19 @@
+# Core
+huggingface_hub>=1.0
+datasets>=3.0
+soundfile
+librosa
+numpy
+tqdm
+torchaudio
+
+# Training backends (GPU box; install the one being trained)
+# f5-tts             # pip install f5-tts  (init: ai4bharat/IndicF5 or OpenF5-TTS-Base)
+# chatterbox-tts     # pip install chatterbox-tts  (+ stlohrey/chatterbox-finetuning for LoRA)
+
+# Evaluation
+neptts-eval            # NepTTS-Bench CLI: neptts-eval --wav-dir DIR -o report.json
+transformers           # MMS-1b-all CER (Nepali 'npi')
+speechbrain            # ECAPA-TDNN speaker similarity
+jiwer                  # WER/CER
+# nemo_toolkit[asr]    # Kriti round-trip CER (restore_from the .nemo file)

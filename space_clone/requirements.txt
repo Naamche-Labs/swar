@@ -1,0 +1,12 @@
+f5-tts==1.1.22
+torch==2.7.1
+torchaudio==2.7.1
+numpy<2
+onnxruntime-gpu
+speechbrain==1.1.2
+librosa
+soundfile
+scipy
+transformers
+huggingface_hub
+spaces

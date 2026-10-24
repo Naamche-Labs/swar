@@ -1,0 +1,64 @@
+phone	class	status	notes
+i	vowel	v1.0	close front
+e	vowel	v1.0	close-mid front
+ax	vowel	v1.0	open-mid central schwa; IPA /ʌ/ per Khatiwada 2009
+aa	vowel	v1.0	open central; no length contrast in spoken Nepali
+o	vowel	v1.0	close-mid back
+u	vowel	v1.0	close back
+in	vowel_nasalized	v1.0	nasalized i
+en	vowel_nasalized	v1.0	nasalized e
+axn	vowel_nasalized	v1.0	nasalized schwa
+aan	vowel_nasalized	v1.0	nasalized open central
+un	vowel_nasalized	v1.0	nasalized u
+axj	diphthong	v1.0	/ʌi̯/ as in कैले 'when'
+axw	diphthong	v1.0	/ʌu̯/ as in जौ 'barley'
+aaj	diphthong	v1.0	/ai̯/ as in भाइ 'brother'
+aaw	diphthong	v1.0	/au̯/ as in आऊ 'come'
+oj	diphthong	v1.0	/oi̯/ as in पोइ 'husband'
+ew	diphthong	v1.0	/eu̯/ as in एउटा 'one'
+ow	diphthong	v1.0	/ou̯/ as in धोऊ 'wash'; rare
+axjn	diphthong_nasalized	v1.0	nasalized /ʌi̯/
+axwn	diphthong_nasalized	v1.0	nasalized /ʌu̯/
+aajn	diphthong_nasalized	v1.0	nasalized /ai̯/
+aawn	diphthong_nasalized	v1.0	nasalized /au̯/
+ojn	diphthong_nasalized	v1.0	nasalized /oi̯/; very rare
+own	diphthong_nasalized	v1.0	nasalized /ou̯/; very rare
+p	consonant	v1.0	bilabial stop unaspirated
+ph	consonant	v1.0	bilabial stop aspirated
+b	consonant	v1.0	bilabial stop voiced
+bh	consonant	v1.0	bilabial stop breathy-voiced
+t	consonant	v1.0	dental stop unaspirated
+th	consonant	v1.0	dental stop aspirated
+d	consonant	v1.0	dental stop voiced
+dh	consonant	v1.0	dental stop breathy-voiced
+tx	consonant	v1.0	retroflex stop unaspirated; cacuminal post-alveolar acoustic target (Khatiwada 2019)
+txh	consonant	v1.0	retroflex stop aspirated
+dx	consonant	v1.0	retroflex stop voiced
+dxh	consonant	v1.0	retroflex stop breathy-voiced
+k	consonant	v1.0	velar stop unaspirated
+kh	consonant	v1.0	velar stop aspirated
+g	consonant	v1.0	velar stop voiced
+gh	consonant	v1.0	velar stop breathy-voiced
+ts	consonant	v1.0	alveolar affricate; was project draft c (Khatiwada 2009)
+tsh	consonant	v1.0	alveolar affricate aspirated; was draft ch
+dz	consonant	v1.0	alveolar affricate voiced; was draft j
+dzh	consonant	v1.0	alveolar affricate breathy-voiced; was draft jh
+m	consonant	v1.0	bilabial nasal
+n	consonant	v1.0	alveolar nasal; covers ञ ण in default mode (Regmi 2025)
+ng	consonant	v1.0	velar nasal; mostly word-final (Khatiwada 2009)
+r	consonant	v1.0	alveolar tap/trill; geminate fully trilled
+s	consonant	v1.0	alveolar fricative; covers श ष स in default mode
+h	consonant	v1.0	glottal voiced fricative IPA /ɦ/; intervocalic deletion can produce length
+l	consonant	v1.0	alveolar lateral
+y	consonant	v1.0	palatal approximant; full phoneme (Regmi 2025)
+w	consonant	v1.0	bilabial approximant; full phoneme (Regmi 2025)
+sh	consonant	careful_only	श palatal sibilant; careful_sanskritized mode only
+sx	consonant	careful_only	ष retroflex sibilant; careful_sanskritized mode only
+ny	consonant	careful_only	ञ palatal nasal; careful_sanskritized mode only
+nx	consonant	careful_only	ण retroflex nasal; careful_sanskritized mode only
+f	consonant	loan_only	English-loan or nukta-marked फ़
+z	consonant	loan_only	English-loan or nukta-marked ज़
+sil	special	v1.0	silence
+sp	special	v1.0	short pause
+brk	special	v1.0	phrase break
+sent	special	v1.0	sentence boundary

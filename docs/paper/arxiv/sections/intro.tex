@@ -1,0 +1,26 @@
+\section{Introduction}
+
+Nepali text-to-speech today is either closed (ElevenLabs, Google), built for one fixed voice (TingTing, Piper, Edge), or part of a multilingual Indic model whose Nepali was read mostly by speakers in India (IndicF5~\citep{indicf5}, Indic Parler-TTS~\citep{parler,indicparler}, Indic-Speak). A person in Kathmandu who wants a voice that sounds like their own, or like a neighbour, has no open option.
+
+Three gaps follow. The first is pronunciation. Nepal Nepali says \np{श}, \np{ष} and \np{स} alike, starts words with ``b'' for \np{व}, and keeps word-final vowels that Indian-recorded data drops, so \np{खान} (``to eat'', said \emph{khaana}) comes out as ``khan''. The second is English. Everyday Nepali is full of English words, and a model that reads Nepali letters says them with Nepali sounds unless the spelling is right. The third is the audio people actually have: compressed voice notes with no transcript, often several speakers, recorded months apart.
+
+\paragraph{Research questions.} We organise the study around four questions, answered in Section~\ref{sec:results}:
+\begin{enumerate}
+  \setlength\itemsep{0pt}
+  \item \textbf{RQ1: Pronunciation.} How does Swar's pronunciation compare with open and commercial Nepali systems on a public benchmark?
+  \item \textbf{RQ2: Cloning from phone audio.} How close is a clone made from a short, unlabelled voice note to the person's real held-out speech?
+  \item \textbf{RQ3: Frontend.} How much do the Nepal pronunciation layer, the held final vowels and the English layer contribute?
+  \item \textbf{RQ4: Training vs prompting.} Does fine-tuning on a speaker's own speech improve a voice beyond prompting with it?
+\end{enumerate}
+
+\paragraph{Findings.} Swar has the lowest pronunciation error on NepTTS-Bench by a wide margin, and its clones of unseen speakers pass speaker verification as often as real second recordings. The text frontend accounts for much of the pronunciation gain, and the two most effective changes came from a listener's reports that we confirmed by measurement: held word-final vowels and English spellings. Speaker fine-tuning barely moved any metric. Swar is not the most natural-sounding system by an automatic predictor, and on full English sentences automatic scores and a native listener disagreed.
+
+\paragraph{Contributions.} We make five contributions:
+\begin{enumerate}
+  \setlength\itemsep{0pt}
+  \item A Nepal pronunciation frontend for a character-input TTS model, with a held-final-vowel rule found and checked by measuring audio rather than ASR text (\S\ref{sec:frontend}).
+  \item An English layer that writes the 2000 most common English words the way Nepali speakers say them, with five sound rules, and evidence that spelling, not training, fixed full-English output (\S\ref{sec:english}).
+  \item A pronunciation metric for Nepali TTS that folds spelling differences speech does not carry, applied identically to every system (\S\ref{sec:setup}).
+  \item An automatic enrolment and take-selection pipeline for phone-quality uploads, and results on a public benchmark, a studio test with a human ceiling, unseen-speaker cloning, code-switching and eight preset voices (\S\ref{sec:results}).
+  \item Open weights, code and a demo.\footnote{\artifactnote}
+\end{enumerate}

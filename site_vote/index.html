@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="ne">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Swar Listening Test</title>
+<meta name="description" content="Listen to Nepali voices and tell us which ones sound human. A blind listening test by Naamche Labs.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f2ea;--card:#fffdf8;--fg:#1c1a17;--mut:#6d665b;--line:#e4dccd;--acc:#a8182e;--acc2:#1f3a70;--ok:#2e6b3f;--soft:#f0e7d8}
+@media (prefers-color-scheme:dark){:root{--bg:#14120f;--card:#1d1a16;--fg:#f1ebe0;--mut:#a69e90;--line:#363027;--acc:#ef5b6e;--acc2:#8fb0ec;--ok:#7cc48f;--soft:#26211b;color-scheme:dark}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:17px/1.55 Mukta,system-ui,sans-serif;padding-left:max(16px,env(safe-area-inset-left));padding-right:max(16px,env(safe-area-inset-right))}
+main{max-width:640px;margin:0 auto;padding-block:40px 64px}
+.brand{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+h1{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:clamp(30px,7vw,44px);line-height:1.1;margin:8px 0 12px;text-wrap:balance}
+h2{font-family:Fraunces,Georgia,serif;font-weight:600;font-size:24px;margin:0 0 8px;text-wrap:balance}
+p{margin:0 0 12px;color:var(--mut)}
+.ne{color:var(--fg)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px;margin-top:20px}
+button{font:inherit;cursor:pointer;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--fg);padding:10px 14px;min-height:44px}
+button:disabled{opacity:.4;cursor:default}
+.primary{background:var(--acc);border-color:var(--acc);color:#fff;font-weight:700;padding:12px 20px}
+.row{display:flex;flex-wrap:wrap;gap:8px}
+.choice.sel{border-color:var(--acc2);box-shadow:inset 0 0 0 2px var(--acc2);font-weight:700}
+.scale{display:grid;grid-template-columns:repeat(5,1fr);gap:6px}
+.scale button{padding:8px 0}
+.lab{font-weight:700;margin:16px 0 6px;color:var(--fg)}
+.ends{display:flex;justify-content:space-between;font-size:13px;color:var(--mut);margin-top:4px}
+.play{width:100%;display:flex;align-items:center;justify-content:center;gap:10px;font-weight:700;background:var(--soft);font-size:18px}
+.bar{height:6px;border-radius:3px;background:var(--line);overflow:hidden;margin:6px 0 4px}
+.bar i{display:block;height:100%;background:var(--acc);width:0;transition:width .3s}
+.meta{font-size:14px;color:var(--mut)}
+.big{font-family:Fraunces,Georgia,serif;font-size:56px;line-height:1;color:var(--acc)}
+.list{margin:12px 0 0;padding:0;list-style:none}
+.list li{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding:8px 0;font-size:15px}
+.tag{font-weight:700}.tag.h{color:var(--ok)}.tag.a{color:var(--acc)}
+footer{margin-top:40px;font-size:13px;color:var(--mut)}
+[hidden]{display:none!important}
+</style>
+</head>
+<body>
+<main>
+  <div class="brand">Naamche Labs · Swar</div>
+
+  <section id="intro">
+    <h1>Can you tell a real Nepali voice from an AI one?</h1>
+    <p class="ne">केही आवाज मान्छेका हुन्, केही AI का। सुन्नुहोस्, अनि भन्नुहोस्।</p>
+    <p>You will hear 12 short clips. Some are real people, some are Swar, our Nepali AI voice. For each one, say how natural it sounds, whether the words are right, and whether you think it is human or AI. It takes about 4 minutes. Headphones help.</p>
+    <div class="card">
+      <div class="lab">Nepali is my… / नेपाली मेरो…</div>
+      <div class="row" id="native">
+        <button class="choice" data-v="native">First language / मातृभाषा</button>
+        <button class="choice" data-v="learner">Second language</button>
+        <button class="choice" data-v="no">I don't speak it</button>
+      </div>
+      <p class="meta" style="margin-top:12px">We store only your answers and a random id, nothing about you.</p>
+      <button class="primary" id="start" disabled>Start / सुरु गर्नुहोस्</button>
+    </div>
+  </section>
+
+  <section id="test" hidden>
+    <div class="meta" id="count"></div>
+    <div class="bar"><i id="prog"></i></div>
+    <div class="card">
+      <button class="play" id="play">▶ Play clip / सुन्नुहोस्</button>
+      <div class="lab">How natural does it sound? / कति स्वाभाविक?</div>
+      <div class="scale" id="natural"></div>
+      <div class="ends"><span>Robotic</span><span>Like a real person</span></div>
+      <div class="lab">Are the words said correctly? / शब्द सही?</div>
+      <div class="scale" id="words"></div>
+      <div class="ends"><span>Many mistakes</span><span>All correct</span></div>
+      <div class="lab">Human or AI? / मान्छे कि AI?</div>
+      <div class="row" id="guess">
+        <button class="choice" data-v="human">Human / मान्छे</button>
+        <button class="choice" data-v="ai">AI</button>
+      </div>
+      <div style="margin-top:20px"><button class="primary" id="next" disabled>Next / अर्को</button></div>
+    </div>
+  </section>
+
+  <section id="done" hidden>
+    <h1>Thank you! / धन्यवाद!</h1>
+    <div class="card">
+      <div class="meta">You spotted</div>
+      <div class="big" id="score"></div>
+      <p id="scoreline" style="margin-top:8px"></p>
+      <ul class="list" id="reveal"></ul>
+    </div>
+    <div class="card" id="enbox">
+      <h2>Bonus: English and mixed lines</h2>
+      <p>Swar also speaks English and Nepali mixed with English. These are all AI. Rate a few more if you have a minute.</p>
+      <button class="primary" id="enstart">Rate 6 more</button>
+    </div>
+  </section>
+
+  <section id="en" hidden>
+    <div class="meta" id="encount"></div>
+    <div class="bar"><i id="enprog"></i></div>
+    <div class="card">
+      <p class="ne" id="entext"></p>
+      <button class="play" id="enplay">▶ Play clip</button>
+      <div class="lab">How natural does it sound?</div>
+      <div class="scale" id="ennatural"></div>
+      <div class="ends"><span>Robotic</span><span>Like a real person</span></div>
+      <div class="lab">Is the English understandable?</div>
+      <div class="scale" id="enwords"></div>
+      <div class="ends"><span>Hard to follow</span><span>Clear</span></div>
+      <div style="margin-top:20px"><button class="primary" id="ennext" disabled>Next</button></div>
+    </div>
+  </section>
+
+  <section id="end" hidden>
+    <h1>All done. Thank you!</h1>
+    <p>Your answers help us make Nepali voices sound more human. Share the test with a friend who speaks Nepali.</p>
+  </section>
+
+  <footer>Swar is an open Nepali voice model by Naamche Labs. Human recordings: AI4Bharat Rasa (CC BY 4.0). The AI voices are clones made with permission.</footer>
+</main>
+<script>
+const $ = id => document.getElementById(id);
+let M, rater, native, items = [], i = 0, ans = {}, t0 = 0, audio = new Audio();
+try { rater = localStorage.getItem("swar_rater"); } catch (e) {}
+if (!rater) { rater = Math.random().toString(36).slice(2, 12); try { localStorage.setItem("swar_rater", rater); } catch (e) {} }
+
+function send(row) {
+  fetch("/api/vote", {method: "POST", headers: {"content-type": "application/json"}, body: JSON.stringify({rater, native, ...row})}).catch(() => {});
+}
+function shuffle(a) { for (let k = a.length - 1; k > 0; k--) { const j = Math.floor(Math.random() * (k + 1)); [a[k], a[j]] = [a[j], a[k]]; } return a; }
+function choices(el, cb) {
+  el.querySelectorAll("button").forEach(b => b.onclick = () => {
+    el.querySelectorAll("button").forEach(x => x.classList.remove("sel")); b.classList.add("sel"); cb(b.dataset.v);
+  });
+}
+function scale(el, cb) {
+  el.innerHTML = [1, 2, 3, 4, 5].map(n => `<button class="choice" data-v="${n}">${n}</button>`).join("");
+  choices(el, v => cb(+v));
+}
+function playClip(file, btn) {
+  audio.pause(); audio = new Audio(file); audio.play();
+  btn.textContent = "▶ Play again"; audio.onended = () => {};
+}
+
+fetch("clips/manifest.json").then(r => r.json()).then(m => { M = m; });
+choices($("native"), v => { native = v; $("start").disabled = false; });
+$("start").onclick = () => {
+  if (!M) return;
+  send({kind: "profile"});
+  // 12 different sentences: 6 heard from a real person, 6 from Swar, women and men mixed
+  const sents = shuffle(M.sentences.slice()).slice(0, 12);
+  const human = new Set(shuffle(sents.map((_, k) => k)).slice(0, 6));
+  items = sents.map((s, k) => human.has(k) ? s.human : s.swar);
+  $("intro").hidden = true; $("test").hidden = false; show();
+};
+function show() {
+  const c = items[i]; ans = {}; t0 = Date.now();
+  $("count").textContent = `Clip ${i + 1} of ${items.length}`;
+  $("prog").style.width = `${100 * i / items.length}%`;
+  $("play").textContent = "▶ Play clip / सुन्नुहोस्";
+  $("play").onclick = () => playClip(c.file, $("play"));
+  const ready = () => { $("next").disabled = !(ans.natural && ans.words && ans.guess); };
+  scale($("natural"), v => { ans.natural = v; ready(); });
+  scale($("words"), v => { ans.words = v; ready(); });
+  $("guess").querySelectorAll("button").forEach(b => b.classList.remove("sel"));
+  choices($("guess"), v => { ans.guess = v; ready(); });
+  $("next").disabled = true;
+}
+$("next").onclick = () => {
+  const c = items[i]; audio.pause();
+  c.answer = ans.guess;
+  send({kind: "rate", clip: c.id, natural: ans.natural, words: ans.words, guess: ans.guess, ms: Date.now() - t0});
+  if (++i < items.length) return show();
+  $("test").hidden = true; $("done").hidden = false;
+  const right = items.filter(c => (c.kind === "human") === (c.answer === "human")).length;
+  $("score").textContent = `${right} / ${items.length}`;
+  const fooled = items.filter(c => c.kind === "swar" && c.answer === "human").length;
+  $("scoreline").textContent = fooled ? `Swar fooled you ${fooled} time${fooled > 1 ? "s" : ""}.` : "You caught every AI clip.";
+  $("reveal").innerHTML = items.map((c, k) => `<li><span>Clip ${k + 1}: you said ${c.answer === "human" ? "human" : "AI"}</span>` +
+    `<span class="tag ${c.kind === "human" ? "h" : "a"}">${c.kind === "human" ? "Human" : "Swar AI"}</span></li>`).join("");
+};
+
+let en = [], j = 0, ea = {};
+$("enstart").onclick = () => {
+  en = shuffle(M.english.slice()).slice(0, 6); j = 0;
+  $("done").hidden = true; $("en").hidden = false; enShow();
+};
+function enShow() {
+  const c = en[j]; ea = {}; t0 = Date.now();
+  $("encount").textContent = `Line ${j + 1} of ${en.length}`;
+  $("enprog").style.width = `${100 * j / en.length}%`;
+  $("entext").textContent = c.text;
+  $("enplay").textContent = "▶ Play clip";
+  $("enplay").onclick = () => playClip(c.file, $("enplay"));
+  const ready = () => { $("ennext").disabled = !(ea.natural && ea.words); };
+  scale($("ennatural"), v => { ea.natural = v; ready(); });
+  scale($("enwords"), v => { ea.words = v; ready(); });
+  $("ennext").disabled = true;
+}
+$("ennext").onclick = () => {
+  audio.pause();
+  send({kind: "en", clip: en[j].id, natural: ea.natural, words: ea.words, ms: Date.now() - t0});
+  if (++j < en.length) return enShow();
+  $("en").hidden = true; $("end").hidden = false;
+};
+</script>
+</body>
+</html>

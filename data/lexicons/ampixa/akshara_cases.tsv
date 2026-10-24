@@ -1,0 +1,41 @@
+case_id	raw_text	expected_units	feature	status	notes
+ak_0001	क	k+ax	inherent_vowel	v1.0	Basic consonant with inherent vowel
+ak_0002	का	k+aa	matra	v1.0	Consonant plus vowel sign
+ak_0003	क्	k	virama	v1.0	Explicit halant removes inherent vowel
+ak_0004	क्र	k+r+ax	conjunct_rakar	v1.0	Conjunct with following r
+ak_0005	र्क	r+k+ax	repha	v1.0	Conjunct with leading r (repha)
+ak_0006	अँ	axn	chandrabindu	v1.0	Independent vowel + chandrabindu → nasalized schwa
+ak_0007	अं	axn	anusvara	v1.0	Independent vowel + anusvara → nasalized schwa (default; contextual rule applies before homorganic plosive)
+ak_0008	आ	aa	independent_vowel	v1.0	Independent open central vowel
+ak_0009	इ	i	independent_vowel	v1.0	Independent close front vowel
+ak_0010	ई	i	long_collapse	v1.0	Long ī collapses to /i/ in default mode (Khatiwada 2009)
+ak_0011	उ	u	independent_vowel	v1.0	Independent close back vowel
+ak_0012	ऊ	u	long_collapse	v1.0	Long ū collapses to /u/ in default mode
+ak_0013	ऋ	r+i	vocalic_r	v1.0	Vocalic r realised as /ri/
+ak_0014	ए	e	independent_vowel	v1.0	Close-mid front vowel
+ak_0015	ऐ	axj	diphthong	v1.0	Diphthong /ʌi̯/ — 1 of Pokharel's 10
+ak_0016	ओ	o	independent_vowel	v1.0	Close-mid back vowel
+ak_0017	औ	axw	diphthong	v1.0	Diphthong /ʌu̯/ — 1 of Pokharel's 10
+ak_0018	कि	k+i	matra	v1.0	Consonant + i matra
+ak_0019	की	k+i	matra_long_collapse	v1.0	Consonant + ī matra (collapsed)
+ak_0020	कु	k+u	matra	v1.0	Consonant + u matra
+ak_0021	कू	k+u	matra_long_collapse	v1.0	Consonant + ū matra (collapsed)
+ak_0022	के	k+e	matra	v1.0	Consonant + e matra
+ak_0023	कै	k+axj	matra_diphthong	v1.0	Consonant + ai matra (diphthong)
+ak_0024	को	k+o	matra	v1.0	Consonant + o matra
+ak_0025	कौ	k+axw	matra_diphthong	v1.0	Consonant + au matra (diphthong)
+ak_0026	कं	k+axn	anusvara_after_consonant	v1.0	Consonant + inherent + anusvara → nasalized schwa
+ak_0027	कँ	k+axn	chandrabindu_after_consonant	v1.0	Consonant + inherent + chandrabindu → nasalized schwa
+ak_0028	कः	k+ax+h	visarga	v1.0	Visarga emits /h/
+ak_0029	क्क	k+k+ax	gemination_raw	v1.0	Geminate before post-rule (rule will collapse to k:)
+ak_0030	क्ष	k+s+ax	conjunct_kSa	v1.0	Conjunct क+ष; ष→s in default
+ak_0031	ज्ञ	dz+n+ax	conjunct_jna	v1.0	Conjunct ज+ञ; ञ→n in default
+ak_0032	श्रेष्ठ	s+r+e+s+txh+ax	conjunct_chain	v1.0	Multi-conjunct word; sibilants collapsed to s; final ठ is txh (retroflex aspirated)
+ak_0033	हिमाल	h+i+m+aa+l+ax	medial_inherent	v1.0	Common word with medial inherent vowel positions
+ak_0034	नेपाल	n+e+p+aa+l+ax	common_word	v1.0	Country name; pre schwa-deletion
+ak_0035	नमस्ते	n+ax+m+ax+s+t+e	common_word	v1.0	Greeting; final e matra
+ak_0036	क्क्र	k+k+r+ax	conjunct_three	v1.0	Three-consonant conjunct including geminate
+ak_0037	फ़ोन	f+o+n+ax	loan_nukta_phone	v1.0	English loan phone with nukta — फ़→f, project loan_only
+ak_0038	ज़िरो	z+i+r+o	loan_nukta_zero	v1.0	English loan zero with ज़→z
+ak_0039	ङ	ng+ax	velar_nasal_initial	v1.0	Velar nasal — rare word-initial except in onomatopoeia
+ak_0040	ळ	l+ax	rare_consonant	v1.0	Retroflex lateral; rare in Nepali, mapped to l

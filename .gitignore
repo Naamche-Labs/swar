@@ -1,0 +1,24 @@
+__pycache__/
+*.pyc
+.DS_Store
+# big artifacts live on the GPU box, never here
+*.pt
+*.safetensors
+*.arrow
+samples/voice_new/
+samples/voice29/
+samples/Speaker B/
+samples/Speaker S/
+samples/podcast/
+samples/final_vowel/
+samples/overnight/
+space_vote/clips/
+space_vote/data/
+.gstack/
+samples/v4/
+samples/v5/
+samples/v7/
+samples/en/
+samples/vote8/
+docs/paper/arxiv/*.aux
+docs/paper/arxiv/*.log

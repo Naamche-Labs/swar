@@ -1,0 +1,43 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+% same look as our earlier arXiv papers (IEEEtran, Times, bold run-in headings); XeTeX via tectonic for Devanagari
+\usepackage{fontspec}
+\setmainfont{texgyretermes}[Extension=.otf, UprightFont=*-regular, BoldFont=*-bold, ItalicFont=*-italic, BoldItalicFont=*-bolditalic]
+\newfontfamily\devanagarifont[Script=Devanagari]{Kohinoor Devanagari}
+\newcommand{\np}[1]{{\devanagarifont #1}}
+\usepackage{microtype}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{amsmath,amssymb}
+\usepackage{xcolor}
+\usepackage[numbers,sort&compress]{natbib}
+\usepackage{url}
+\usepackage{xurl}
+\usepackage[hidelinks]{hyperref}
+\makeatletter\renewcommand{\paragraph}[1]{\par\noindent\textbf{#1}\hspace{0.5em}}\makeatother
+\renewenvironment{abstract}{\par\noindent\footnotesize\bfseries\textit{Abstract.}\ }{\par\vspace{0.6\baselineskip}}
+\newcommand{\artifactnote}{Code, frontend, evaluation scripts and results: \url{https://github.com/Naamche-Labs/swar} (to be published with the paper).}
+
+\begin{document}
+
+\title{Swar: Open Zero-Shot Voice Cloning for Nepali from Phone-Quality Speech}
+
+\author{
+\IEEEauthorblockN{Aarjan Chaudhary}
+\IEEEauthorblockA{\textit{Naamche Labs}}
+}
+
+\maketitle
+
+\input{sections/abstract}
+\input{sections/intro}
+\input{sections/related}
+\input{sections/system}
+\input{sections/setup}
+\input{sections/results}
+\input{sections/discussion}
+
+\bibliographystyle{IEEEtranN}
+\bibliography{refs}
+
+\end{document}

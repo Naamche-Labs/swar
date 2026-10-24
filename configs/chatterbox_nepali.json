@@ -1,0 +1,17 @@
+{
+  "experiment": "nepali-chatterbox-lora-v0",
+  "role": "challenger + fast baseline (replaces CosyVoice2)",
+  "base_model": "ResembleAI/chatterbox (multilingual, MIT, ~0.5B, 23 languages incl. Hindi so Devanagari is in the tokenizer)",
+  "existing_nepali_baseline": "waglesameer5/chatterbox-nepali (MIT, public) - must beat this",
+  "method": {
+    "lora": "rank 32 on the T3 module, from the Hindi language id",
+    "tokenizer": "extend for Nepali-specific characters, init new rows from Devanagari equivalents (as in reenigne314/chatterbox-indic-lora: 2,454 -> 2,871 tokens)",
+    "text_input": "normalized Devanagari from frontend.normalize",
+    "repo": "https://github.com/stlohrey/chatterbox-finetuning"
+  },
+  "data": "same as configs/openf5_nepali.json (IndicVoices-R + Rasa Nepali, held-out speakers excluded)",
+  "compute": "1x A100/H100, under a day",
+  "eval": "pipeline/evaluate.py on the same held-out speakers + NepTTS-Bench sentences; ship whichever of F5 / Chatterbox wins",
+  "rejected_alternative": "FunAudioLLM/CosyVoice2-0.5B: speech tokenizer trained only on zh/en/ja/ko; maintainer recommends >=5,000h for a new language (Turkish came out unintelligible), FunAudioLLM/CosyVoice issues #466, #830",
+  "sources": ["https://huggingface.co/ResembleAI/chatterbox", "https://huggingface.co/waglesameer5/chatterbox-nepali", "https://huggingface.co/reenigne314/chatterbox-indic-lora"]
+}
