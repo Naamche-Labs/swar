@@ -48,6 +48,21 @@ Swar rows use the studio voice (AI4Bharat Rasa, CC BY 4.0). With the benchmark's
 - `notebooks/`: the Colab cloner. `space_clone/`: the same app as a Hugging Face Space.
 - `docs/paper/arxiv/`: paper sources.
 
+## Run it on your own machine
+
+The cloner runs on an NVIDIA GPU, on an Apple Silicon Mac (MPS) or, slowly, on CPU. With Python 3.11:
+
+```bash
+hf download Aarjan/swar --local-dir swar && cd swar
+python3.11 -m venv .venv && .venv/bin/pip install f5-tts==1.1.22 speechbrain==1.1.2 "numpy<2" "pyarrow<20" \
+       onnxruntime librosa soundfile scipy transformers huggingface_hub gradio   # onnxruntime-gpu on NVIDIA
+export F5_CKPT=$PWD/podvoices_ema.pt F5_EN_CKPT=$PWD/swar_v6_ema.pt F5_VOCAB=$PWD/vocab.txt \
+       KRITI_ONNX=$PWD/kriti_onnx PRESETS_DIR=$PWD/presets PYTORCH_ENABLE_MPS_FALLBACK=1
+.venv/bin/python app/app.py   # http://localhost:7860
+```
+
+`EVAL_DEVICE` forces the device of the scoring models (default: cuda, then mps, then cpu).
+
 ## Model
 
 F5-TTS Base initialised from [AI4Bharat IndicF5](https://huggingface.co/ai4bharat/IndicF5) (MIT), trained on open Nepali speech (Rasa, IndicVoices-R, FLEURS, OpenSLR 43 and 54), English (LibriTTS-R) and podcast speech used with the speakers' permission. The ready-made voices are built only from model-made audio; no podcast recording is released.

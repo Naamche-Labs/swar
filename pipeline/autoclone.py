@@ -86,8 +86,9 @@ def _lazy(name):
         _M[name] = DevaMMS()
     elif name == "whisper":
         from transformers import pipeline
-        _M[name] = pipeline("automatic-speech-recognition", model="openai/whisper-large-v3", device=0,
-                            torch_dtype=torch.float16)
+        dev = "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
+        _M[name] = pipeline("automatic-speech-recognition", model="openai/whisper-large-v3", device=dev,
+                            torch_dtype=torch.float32 if dev == "cpu" else torch.float16)
     elif name == "f5":
         from f5_tts.api import F5TTS
         from clone import patch_f5_chunker
@@ -427,6 +428,20 @@ def say(voice_dir, text, *args, **kw):
             os.environ["ENGLISH_LATIN"] = saved[2]
 
 
+def _load_voice(voice_dir):
+    """voice.json with clip paths that exist here: a voice built on another machine (the published presets store
+    /home/presets_pub/...) or moved since keeps its clips in voice_dir/pieces/, so missing paths are looked up there."""
+    v = json.load(open(f"{voice_dir}/voice.json"))
+
+    def local(w):
+        alt = os.path.join(voice_dir, "pieces", os.path.basename(w))
+        return alt if not os.path.exists(w) and os.path.exists(alt) else w
+    for p in v.get("prompts", []) + v.get("en_prompts", []) + v.get("pieces", []):
+        p["wav"] = local(p["wav"])
+    v["held_out"] = [local(w) for w in v.get("held_out", [])]
+    return v
+
+
 def _say(voice_dir, text, out_wav, takes=12, nfe=16, keep_all=False, pace=None, prompts=None):
     """Generate `takes` candidates and keep the best (pronunciation first, then voice match). `pace` (letters/s)
     overrides the speaker's median pace, e.g. to match one real clip."""
@@ -436,7 +451,7 @@ def _say(voice_dir, text, out_wav, takes=12, nfe=16, keep_all=False, pace=None, 
     from clone import cross_script_speed, set_pace, speed_for, to_model_text
     from frontend import normalize
     from frontend.romanize import romanize
-    v = json.load(open(f"{voice_dir}/voice.json"))
+    v = _load_voice(voice_dir)
     main = [p for p in v["pieces"] if p["main"] and p["wav"] not in set(v["held_out"])]
     english = _is_english(text) and os.environ.get("ENGLISH_MODEL") == "1"
     # base v5 (663 h English) says English well from a Nepali prompt too: every English test of 2026-10-26/27 used the

@@ -2,7 +2,9 @@ f5-tts==1.1.22
 torch==2.7.1
 torchaudio==2.7.1
 numpy<2
-onnxruntime-gpu
+onnxruntime-gpu; sys_platform == "linux"
+onnxruntime; sys_platform != "linux"
+pyarrow<20  # newer pyarrow needs NumPy 2 and breaks `import f5_tts` under numpy<2
 speechbrain==1.1.2
 librosa
 soundfile

@@ -4,7 +4,17 @@ Language-agnostic acoustic quality, not a substitute for Nepali listeners."""
 import os
 
 _model = None
-DEV = os.environ.get("EVAL_DEVICE", "cuda")
+
+
+def _auto_device():
+    """cuda, else mps (Apple Silicon), else cpu; EVAL_DEVICE overrides."""
+    if os.environ.get("EVAL_DEVICE"):
+        return os.environ["EVAL_DEVICE"]
+    import torch
+    return "cuda" if torch.cuda.is_available() else "mps" if torch.backends.mps.is_available() else "cpu"
+
+
+DEV = _auto_device()
 
 
 def utmos(wav16k):
