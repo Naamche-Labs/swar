@@ -1,43 +1,61 @@
-# Swar: open Nepali voice cloning
+# Swar स्वर: open Nepali voice cloning
 
-Swar speaks Nepali the way it is spoken in Nepal, and clones a voice from 20 to 30 seconds of someone talking (a WhatsApp voice note is enough). It also reads English and Nepali mixed with English. Built by [Naamche Labs](https://github.com/Naamche-Labs).
+Swar speaks Nepali the way it is spoken in Nepal. Give it 20 to 30 seconds of one person talking (a WhatsApp voice note is enough) and it speaks in their voice: Nepali, English, and Nepali mixed with English. Built by [Naamche Labs](https://naamchelabs.com/models/swar).
 
-- **Try it free:** [open the Colab notebook](https://colab.research.google.com/github/Naamche-Labs/swar/blob/main/notebooks/Swar_Clone_Colab.ipynb) (free T4 GPU), drop in a clip or pick one of our voices, Maya or Aarav.
-- **Model:** [huggingface.co/Aarjan/swar](https://huggingface.co/Aarjan/swar)
-- **Listening test:** [swar-vote.vercel.app](https://swar-vote.vercel.app): can you tell Swar from a real person?
-- **Paper:** `docs/paper/arxiv/` (arXiv link coming).
+- **Try it free:** [Colab notebook](https://colab.research.google.com/github/Naamche-Labs/swar/blob/main/notebooks/Swar_Clone_Colab.ipynb) on a free T4 GPU. Upload a clip, or pick a ready-made voice (Maya or Aarav).
+- **Weights:** [huggingface.co/Aarjan/swar](https://huggingface.co/Aarjan/swar)
+- **Cloning benchmark:** [github.com/Naamche-Labs/nepali-voice-cloning-bench](https://github.com/Naamche-Labs/nepali-voice-cloning-bench)
 
 ## Results
 
-NepTTS-Bench, 205 sentences, one take, scored with the benchmark's recogniser (MMS-1b-all). Lower is better for the error columns.
+**[NepTTS-Bench](https://github.com/Ampixa/neptts-bench)**, the public Nepali TTS benchmark: 205 sentences built to trip a TTS up (minimal pairs, questions, tongue twisters, short phrases), one take per system, scored with the benchmark's own recogniser (Meta MMS). *Pronunciation error* ignores spelling differences Nepali speech does not make (श/ष/स, ि/ी, and so on), so it counts the mistakes a listener hears. Lower is better.
 
-| System | Character error | Pronunciation error | UTMOS |
-|---|---|---|---|
-| Swar, studio voice | **6.19** | **2.92** | 3.82 |
-| Swar, Maya voice | 7.45 | 4.52 | **4.09** |
-| OmniVoice (same prompt) | 6.68 | 4.32 | 3.93 |
-| Indic-Speak Srijana | 10.25 | 8.12 | 3.97 |
-| ElevenLabs v3 | 15.70 | 12.91 | |
-| Piper | 18.68 | 17.00 | |
+| System | Pronunciation error | Character error |
+|---|---|---|
+| **Swar** | **2.92%** | **6.19%** |
+| OmniVoice (same voice prompt) | 4.32% | 6.68% |
+| Indic-Speak Srijana | 8.12% | 10.25% |
+| IndicF5 (the model Swar started from) | 9.37% | 12.82% |
+| Indic Parler-TTS | 9.51% | 11.70% |
+| ElevenLabs v3 | 12.91% | 15.70% |
+| Gemini | 15.03% | 15.31% |
+| Piper | 17.00% | 18.68% |
 
-Cloning unseen speakers (FLEURS, 82 items): Swar CER 4.55, speaker similarity 0.691, UTMOS 2.67; OmniVoice 5.30, 0.681, 2.49. Mixed Nepali and English (30 held-out sentences): CER 5.6 against 11.4 for OmniVoice. UTMOS and NepaliMOS are automatic predictors, not listeners; the public listening test above is the human check.
+Swar rows use the studio voice (AI4Bharat Rasa, CC BY 4.0). With the benchmark's official toolkit (neptts-eval), Swar's Maya voice has the highest SCOREQ naturalness score in the benchmark's published results (4.57; ElevenLabs v3 4.45) and the studio voice the lowest Whisper round-trip error (0.329; Gemini 0.371). Both are automatic scores.
+
+**[Nepali Voice Cloning Benchmark](https://github.com/Naamche-Labs/nepali-voice-cloning-bench)** (our open benchmark: four people recorded in Nepal by Google FLEURS, one short clip each, 82 new sentences, identical inputs for every system; clean track):
+
+| | Errors (CER) ↓ | Voice match ↑ |
+|---|---|---|
+| **Swar** | **4.55%** | **0.691** |
+| OmniVoice | 4.89% | 0.676 |
+| IndicF5 | 8.44% | 0.663 |
+
+**Nepali mixed with English** (30 held-out sentences such as "मेरो laptop को battery…", written before any output was heard): Swar 5.6% character errors, OmniVoice 11.4%, IndicF5 14.6%.
+
+## Checkpoints
+
+| File | Use it for | Notes |
+|---|---|---|
+| `podvoices_ema.pt` | **The default.** Nepali, and Nepali with English words. | Every number above is this model. |
+| `swar_v6_ema.pt` | Text with a lot of English, or English sentences. | Trained further with 96 h of English (LibriTTS-R). Mixed Nepali-English errors 5.24% (default 5.6%), but pure Nepali is weaker (NepTTS-Bench pronunciation error 4.04%, FLEURS cloning errors 5.41%). Run it with `ENGLISH_LATIN=1` so English stays in Latin letters. |
 
 ## What is here
 
-- `frontend/`: text normalisation and pronunciation layers (Nepal Nepali spellings, held final vowels, English written the way Nepali speakers say it).
-- `pipeline/`: data preparation and `autoclone.py`, the cloner: enrolment from casual audio, take selection that checks pronunciation before voice match.
+- `frontend/`: text normalisation and pronunciation: Nepali written the way it is spoken in Nepal, English the way Nepali speakers say it, and `english_fix.py`, a short list of hard English words (tough, Wednesday, honestly…) respelled only where measurement showed it helps.
+- `pipeline/`: data preparation and `autoclone.py`, the cloner: it turns a casual voice note into a clean prompt with a transcript from Kriti (our Nepali speech recogniser), makes several takes, and keeps the one whose pronunciation checks out before it looks at voice match. English said in a voice cloned from Nepali speech is paced by syllables, so no words are dropped.
 - `tools/`, `ops/`: evaluation and training scripts as they were run. `EXPERIMENTS.md`: the full log, including what did not work.
-- `notebooks/`: the Colab cloner. `space_clone/`: the same app as a Hugging Face Space. `site_vote/`: the listening test.
+- `notebooks/`: the Colab cloner. `space_clone/`: the same app as a Hugging Face Space.
 - `docs/paper/arxiv/`: paper sources.
 
 ## Model
 
-F5-TTS Base initialised from [IndicF5](https://huggingface.co/ai4bharat/IndicF5) (MIT), trained on open Nepali speech (Rasa, IndicVoices-R, FLEURS, OpenSLR 43/54) plus English (LibriTTS-R) and podcast speech used with the speakers' permission. The preset voices Maya and Aarav are built only from model-made audio; no podcast recording is released.
+F5-TTS Base initialised from [AI4Bharat IndicF5](https://huggingface.co/ai4bharat/IndicF5) (MIT), trained on open Nepali speech (Rasa, IndicVoices-R, FLEURS, OpenSLR 43 and 54), English (LibriTTS-R) and podcast speech used with the speakers' permission. The ready-made voices are built only from model-made audio; no podcast recording is released.
 
 ## Use it responsibly
 
-Only clone a voice with that person's permission. Do not use Swar to impersonate anyone or to deceive.
+Only clone a voice with that person's permission. Do not use Swar to impersonate anyone, to deceive, or to commit fraud.
 
 ## License
 
-Code: MIT (`LICENSE`). Model weights: see the model card on Hugging Face.
+Code: MIT (`LICENSE`). Weights: CC BY-SA 4.0 (see the model card on Hugging Face).

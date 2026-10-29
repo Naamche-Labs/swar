@@ -393,32 +393,53 @@ def _score(c):
     return c["sim"] + 0.1 * (c.get("nat", 3.0) - 3.0)
 
 
+def _err(c):
+    """pronunciation error used to pick takes: CER (Nepali) or Whisper word error (English), plus a penalty that
+    shuts out an English take whose sounds are clearly worse than the best one's (phone_check)"""
+    return c["cer"] + c.get("pen", 0.0)
+
+
 def say(voice_dir, text, out_wav, takes=12, nfe=16, keep_all=False, pace=None, prompts=None):
     """Generate `takes` candidates and keep the best (pronunciation first, then voice match). `pace` (letters/s)
     overrides the speaker's median pace, e.g. to match one real clip."""
     import shutil
     import time
     t0 = time.time()
-    from clone import set_pace, speed_for, to_model_text
+    from clone import cross_script_speed, set_pace, speed_for, to_model_text
     from frontend import normalize
     from frontend.romanize import romanize
     v = json.load(open(f"{voice_dir}/voice.json"))
     main = [p for p in v["pieces"] if p["main"] and p["wav"] not in set(v["held_out"])]
     english = _is_english(text) and os.environ.get("ENGLISH_MODEL") == "1"
-    own_en = _is_english(text) and BILINGUAL and bool(v.get("en_prompts"))
+    # base v5 (663 h English) says English well from a Nepali prompt too: every English test of 2026-10-26/27 used the
+    # voice's Nepali prompt with English text, so a voice without English clips no longer falls back to the Nepali path
+    own_en = _is_english(text) and BILINGUAL and (bool(v.get("en_prompts")) or os.environ.get("EN_FROM_NE_PROMPT", "1") == "1")
     models = [("eng", _lazy("eng"))] if english else [("ours_en", _lazy("f5"))] if own_en else [("ours", _lazy("f5"))]
-    use = [pr for pr in (v["en_prompts"] if own_en else v["prompts"]) if not prompts or os.path.basename(pr["wav"]) in prompts]
-    plan = [(pr, m, cfg, seed) for pr in use for m in models for cfg in (2.0, 2.5) for seed in range(4)]
+    use = [pr for pr in (v.get("en_prompts") or v["prompts"] if own_en else v["prompts"]) if not prompts or os.path.basename(pr["wav"]) in prompts]
+    # English in the speaker's own voice follows the text harder: long passages in 5 voices, CFG 3.0 vs 2.0 gave 7.7% vs
+    # 8.1% wrong sounds at the same naturalness (UTMOS 3.88 vs 3.87); 4.0 had fewer still but sounded flatter (3.78)
+    cfgs = (3.0, 2.5) if own_en else (2.0, 2.5)
+    plan = [(pr, m, cfg, seed) for pr in use for m in models for cfg in cfgs for seed in range(4)]
     plan = sorted(plan, key=lambda x: (x[3], x[2]))[:max(1, takes)]  # spread takes over prompts first
     work = tempfile.mkdtemp(dir=os.path.dirname(os.path.abspath(out_wav)) or ".")
     cands = []
     for i, (pr, (mname, model), cfg, seed) in enumerate(plan):
-        gen = text if mname in ("eng", "ours_en") else to_model_text(text, "chars")
-        rt = romanize(pr["text"]) if mname == "eng" else pr["text"] if mname == "ours_en" else normalize(pr["text"])
+        if mname == "ours_en":
+            from frontend.english_fix import fix_english
+            gen = fix_english(text)
+        else:
+            gen = text if mname == "eng" else to_model_text(text, "chars")
+        rt = romanize(pr["text"]) if mname == "eng" else normalize(pr["text"]) if mname != "ours_en" or not _is_english(pr["text"]) else pr["text"]
         set_pace(rt, pr["wav"])
+        base_sp = pr["speed"] * (pace / v["rate"] if pace else 1.0)
+        # English text said from a Nepali prompt: length by syllables, not bytes (clone.cross_script_speed)
+        sp = cross_script_speed(gen, rt, base_sp) if mname == "ours_en" and not _is_english(rt) else speed_for(gen, base_sp)
         p = f"{work}/take_{i:02d}.wav"
         model.infer(ref_file=pr["wav"], ref_text=rt, gen_text=gen, file_wave=p, nfe_step=nfe, seed=seed, cfg_strength=cfg,
-                    speed=speed_for(gen, pr["speed"] * (pace / v["rate"] if pace else 1.0)), remove_silence=True)
+                    speed=sp, remove_silence=True)
+        import soundfile as sf
+        if sf.info(p).duration < 0.3:   # silence trimming can leave nothing; ECAPA then crashes on an empty clip
+            continue
         # a short upload can leave one piece only: compare with it rather than with nothing
         others = [q["emb"] for q in main if q["wav"] != pr["wav"]] or [q["emb"] for q in main]
         ref = np.mean(others, 0)
@@ -429,11 +450,27 @@ def say(voice_dir, text, out_wav, takes=12, nfe=16, keep_all=False, pace=None, p
         if c["model"] == "ours_en":
             c["heard"] = whisper_en(c["file"])
             c["cer"] = wer_en(text, c["heard"])
+    en = [c for c in cands if c["model"] == "ours_en"]
+    if en and os.environ.get("PHONE_CHECK", "1") == "1":
+        # Whisper forgives "hoon-estly" as "honestly": among the takes it hears right, keep the ones whose SOUNDS
+        # are right too (pipeline/phone_check.py); the rest of the pick (voice match, naturalness) is unchanged
+        from phone_check import per
+        for c in en:
+            c["per"] = per(text, c["file"])
+        if all(c["per"] is not None for c in en):
+            wfloor = min(c["cer"] for c in en)
+            ok = [c for c in en if c["cer"] <= wfloor + 0.03]
+            pfloor = min(c["per"] for c in ok)
+            for c in en:   # a take with clearly more wrong sounds is pushed out of the competition (see _err)
+                if c not in ok or c["per"] > pfloor + 0.03:
+                    c["pen"] = 1.0
     ours = [c for c in cands if c["model"] == "ours"]
     for c, h in zip(ours, read_back([c["file"] for c in ours]) if ours else []):  # one batched read-back per line
         c["heard"], c["cer"] = h, pcer(normalize(text), h)
-    floor = min(c["cer"] for c in cands)
-    best = max([c for c in cands if c["cer"] <= floor + 0.03], key=_score)
+    if not cands:
+        raise RuntimeError(f"every take came out silent for: {text[:60]}")
+    floor = min(_err(c) for c in cands)
+    best = max([c for c in cands if _err(c) <= floor + 0.03], key=_score)
     shutil.copy(best["file"], out_wav)
     if not keep_all:
         shutil.rmtree(work, ignore_errors=True)
@@ -470,9 +507,9 @@ def say_long(voice_dir, text, out_wav, takes=8, pace=None, prompt=None):
                prompts=[prompt] if prompt else None) for pi, si, s in sent]
 
     def pick(r, pr):
-        cs = [c for c in r["cands"] if c["prompt"] == pr]
-        floor = min(c["cer"] for c in cs)
-        return max([c for c in cs if c["cer"] <= floor + 0.03], key=_score)
+        cs = [c for c in r["cands"] if c["prompt"] == pr] or r["cands"]   # every take of this prompt came out empty
+        floor = min(_err(c) for c in cs)
+        return max([c for c in cs if _err(c) <= floor + 0.03], key=_score)
     names = sorted({c["prompt"] for r in res for c in r["cands"]})
     score = {pr: float(np.mean([_score(pick(r, pr)) - 0.5 * pick(r, pr)["cer"] for r in res])) for pr in names}
     chosen = prompt if prompt in names else max(score, key=score.get)

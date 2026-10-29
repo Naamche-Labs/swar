@@ -44,6 +44,9 @@ def to_model_text(text, mode):
         # ENGLISH_LATIN=1 (bilingual checkpoints, trained on LibriTTS-R English): English stays in Latin letters
         # so the model reads it as English instead of Nepali-letter English
         latin = os.environ.get("ENGLISH_LATIN", "0") == "1"
+        if latin:  # hard English words respelled the way they sound (frontend/english_fix.py, each one measured)
+            from frontend.english_fix import fix_english
+            fixed = fix_english(fixed)
         return normalize(fixed, english=not latin, nepal=os.environ.get("NEPAL_ACCENT", "1") == "1")
     return respell(g2p(normalize(text)))
 
@@ -99,6 +102,29 @@ def patch_f5_chunker():
         return nepali_chunks(text, chars_per_sec=_PACE["cps"] or max(4.0, max_chars / 3 / 14))
     chunk_text.nepali = True
     U.chunk_text = chunk_text
+
+
+# a consonant is a syllable unless it carries a virama or ends the word bare (Nepali drops the final inherent vowel)
+_CONS = (r"[क-हक़-य़]़?(?=[ा-ौ])|[क-हक़-य़]़?(?![्ा-ौ])(?![\s,.?!।;:]|$)|(?<![ऀ-ॿ])[क-हक़-य़](?=[\s,.?!।;:]|$)")
+
+
+def syllables(t):
+    """syllables in Nepali or English text, counted the same way in both scripts"""
+    import re
+    n = len(re.findall(_CONS, t)) + len(re.findall(r"[\u0904-\u0914]", t))
+    for w in re.findall(r"[A-Za-z']+", t):
+        w = w.lower()
+        k = len(re.findall(r"[aeiouy]+", w)) - (w.endswith("e") and not w.endswith(("le", "ee")) and len(w) > 2)
+        n += max(1, k)
+    return n + 0.5 * len(re.findall(r"[,;:]", t)) + len(re.findall(r"[.?!\u0964]", t))
+
+
+def cross_script_speed(gen, ref_text, speed=1.0):
+    """F5 sizes the output from UTF-8 bytes: gen_bytes / ref_bytes x the prompt's length. A Devanagari letter is 3 bytes
+    and an English one 1, so English text after a Nepali prompt got about a third of the time it needs and the model
+    dropped words to fit (cloner A/B 2026-10-27: 30-38% of English words missing). This speed makes F5's byte length
+    equal a syllable length at the prompt's own syllable rate."""
+    return speed * len(gen.encode()) / max(1, len(ref_text.encode())) * syllables(ref_text) / max(1, syllables(gen))
 
 
 def speed_for(text, speed=1.0):

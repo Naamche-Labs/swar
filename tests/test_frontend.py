@@ -251,6 +251,25 @@ def test_normalize_idempotent():
         assert normalize(normalize(s)) == normalize(s), s
 
 
+def test_english_fix_measured_words_only():
+    # base v5: "machines" as typed came out ma-chi-ne; "again", "design" must stay as typed (respelling hurt);
+    # "honestly" -> "onnistly" measured best on base v6
+    from frontend.english_fix import fix_english
+    assert fix_english("Machines are tough enough.") == "Mesheens are tuff inuff."
+    assert fix_english("Try it again; the design is clear.") == "Try it again; the design is clear."
+    assert fix_english("Honestly, to be honest.") == "Onnistly, to be onnist."
+    assert fix_english("आज office मा meeting, sure?") == "आज office मा meeting, shoor?"
+
+
+def test_cross_script_speed_gives_english_room():
+    # English after a Nepali prompt: F5's byte rule gave it a third of the time and words were dropped
+    sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "pipeline"))
+    from clone import cross_script_speed, syllables
+    rt = "म आज बजार गएर तरकारी किनेर घर फर्किएँ।"
+    assert syllables(rt) == 17.0 and syllables("Honestly, I wasn't sure this would work.") == 10.5
+    assert 0.6 < cross_script_speed("Honestly, I wasn't sure this would work.", rt) < 0.7
+
+
 if __name__ == "__main__":
     import traceback
     fns = [v for k, v in sorted(globals().items()) if k.startswith("test_") and callable(v)]
