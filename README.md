@@ -23,13 +23,13 @@ Swar speaks Nepali the way it is spoken in Nepal. Give it 20 to 30 seconds of on
 
 Swar rows use the studio voice (AI4Bharat Rasa, CC BY 4.0). With the benchmark's official toolkit (neptts-eval), Swar's Maya voice has the highest SCOREQ naturalness score in the benchmark's published results (4.57; ElevenLabs v3 4.45) and the studio voice the lowest Whisper round-trip error (0.329; Gemini 0.371). Both are automatic scores.
 
-**[Nepali Voice Cloning Benchmark](https://github.com/Naamche-Labs/nepali-voice-cloning-bench)** (our open benchmark: four people recorded in Nepal by Google FLEURS, one short clip each, 82 new sentences, identical inputs for every system; clean track):
+**[Nepali Voice Cloning Benchmark](https://github.com/Naamche-Labs/nepali-voice-cloning-bench)** (our open benchmark: four voices recorded in Nepal by Google FLEURS, one short clip each, 64 distinct prompt + sentence pairs, identical inputs for every system; v1.1 scoring, clean track):
 
 | | Errors (CER) ↓ | Voice match ↑ |
 |---|---|---|
-| **Swar** | **4.55%** | **0.691** |
-| OmniVoice | 4.89% | 0.676 |
-| IndicF5 | 8.44% | 0.663 |
+| **Swar** | **4.72%** | **0.697** |
+| OmniVoice | 5.08% | 0.683 |
+| IndicF5 | 8.30% | 0.669 |
 
 **Nepali mixed with English** (30 held-out sentences such as "मेरो laptop को battery…", written before any output was heard): Swar 5.6% character errors, OmniVoice 11.4%, IndicF5 14.6%.
 
