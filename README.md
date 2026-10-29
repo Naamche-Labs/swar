@@ -38,7 +38,7 @@ Swar rows use the studio voice (AI4Bharat Rasa, CC BY 4.0). With the benchmark's
 | File | Use it for | Notes |
 |---|---|---|
 | `podvoices_ema.pt` | **The default.** Nepali, and Nepali with English words. | Every number above is this model. |
-| `swar_v6_ema.pt` | Text with a lot of English, or English sentences. | Trained further with 96 h of English (LibriTTS-R). Mixed Nepali-English errors 5.24% (default 5.6%), but pure Nepali is weaker (NepTTS-Bench pronunciation error 4.04%, FLEURS cloning errors 5.41%). Run it with `ENGLISH_LATIN=1` so English stays in Latin letters. |
+| `swar_v6_ema.pt` | English sentences. | Trained further with 96 h of English (LibriTTS-R). The cloner uses it automatically for sentences with no Nepali letters when it is present (`F5_EN_CKPT`); everything with Devanagari still goes to the default model, unchanged. Across the nine voices, English wrong sounds 20.4% → 8.6%. On its own it is weaker at pure Nepali (NepTTS-Bench pronunciation error 4.04%), which is why it is not the default. |
 
 ## What is here
 

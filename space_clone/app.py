@@ -27,6 +27,9 @@ if os.environ.get("MODEL_REPO"):
     from huggingface_hub import snapshot_download
     d = snapshot_download(os.environ["MODEL_REPO"], token=os.environ.get("HF_TOKEN"))
     os.environ.setdefault("F5_CKPT", os.path.join(d, os.environ.get("MODEL_FILE", "podvoices_ema.pt")))
+    # English sentences go to swar_v6_ema.pt when the repo has it (pipeline/autoclone.py, F5_EN_CKPT)
+    if os.path.exists(os.path.join(d, os.environ.get("EN_MODEL_FILE", "swar_v6_ema.pt"))):
+        os.environ.setdefault("F5_EN_CKPT", os.path.join(d, os.environ.get("EN_MODEL_FILE", "swar_v6_ema.pt")))
     os.environ.setdefault("PRESETS_DIR", os.path.join(d, "presets"))
     os.environ.setdefault("F5_VOCAB", os.path.join(d, "vocab.txt"))
     os.environ.setdefault("KRITI_ONNX", os.path.join(d, "kriti_onnx"))

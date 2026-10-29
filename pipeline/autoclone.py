@@ -43,6 +43,11 @@ KRITI_ONNX = os.environ.get("KRITI_ONNX", "")  # folder from ops/export_kriti_on
 # speech (Latin prompt + Latin text, the setting it was trained in). Podcast host test: accent classifier "native-like"
 # 31% (her real English 33%, Nepali-letter English 0%), Whisper WER 15% per take before picking.
 BILINGUAL = os.environ.get("BILINGUAL", "1" if "_bi" in os.path.basename(CKPT) else "0") == "1"
+# English model (2026-10-29): with F5_EN_CKPT set (swar_v6_ema.pt, trained further on 96 h of English), a sentence
+# with no Devanagari in it goes to that model with English kept in Latin letters. Every sentence with Devanagari, pure
+# Nepali or mixed, takes exactly the old path (same model, same settings, byte-identical output). Nine voices x five
+# English sentences, 4 takes: wrong sounds 20.4% -> 8.6%, wrong words 1.9% -> 1.6%.
+F5_EN_CKPT = os.environ.get("F5_EN_CKPT", "")
 VOCODER = os.environ.get("VOCODER", "vocos")  # BigVGAN path for studio presets; on WhatsApp clones it scored lower (UTMOS 3.00 vs 3.12)
 BIGVGAN_SRC = os.environ.get("BIGVGAN_SRC", "/home/BigVGAN")
 _M = {}
@@ -91,6 +96,12 @@ def _lazy(name):
         _M[name].ema_model.float()  # IndicF5 weights give NaN / noise in fp16
         if VOCODER != "vocos" and os.path.exists(VOCODER):
             _M[name].vocoder = BigVGANDecoder(VOCODER)
+    elif name == "f5en":
+        from f5_tts.api import F5TTS
+        from clone import patch_f5_chunker
+        patch_f5_chunker()
+        _M[name] = F5TTS(model="F5TTS_Base", ckpt_file=F5_EN_CKPT, vocab_file=VOCAB)
+        _M[name].ema_model.float()
     elif name == "eng":
         from f5_tts.api import F5TTS
         from huggingface_hub import snapshot_download
@@ -399,7 +410,24 @@ def _err(c):
     return c["cer"] + c.get("pen", 0.0)
 
 
-def say(voice_dir, text, out_wav, takes=12, nfe=16, keep_all=False, pace=None, prompts=None):
+def say(voice_dir, text, *args, **kw):
+    """`_say`, with all-English sentences sent to the English model when F5_EN_CKPT is set (see F5_EN_CKPT above)."""
+    global BILINGUAL
+    if not (F5_EN_CKPT and _is_english(text)):
+        return _say(voice_dir, text, *args, **kw)
+    saved = (_lazy("f5"), BILINGUAL, os.environ.get("ENGLISH_LATIN"))
+    _M["f5"], BILINGUAL, os.environ["ENGLISH_LATIN"] = _lazy("f5en"), True, "1"
+    try:
+        return _say(voice_dir, text, *args, **kw)
+    finally:
+        _M["f5"], BILINGUAL = saved[0], saved[1]
+        if saved[2] is None:
+            os.environ.pop("ENGLISH_LATIN", None)
+        else:
+            os.environ["ENGLISH_LATIN"] = saved[2]
+
+
+def _say(voice_dir, text, out_wav, takes=12, nfe=16, keep_all=False, pace=None, prompts=None):
     """Generate `takes` candidates and keep the best (pronunciation first, then voice match). `pace` (letters/s)
     overrides the speaker's median pace, e.g. to match one real clip."""
     import shutil
