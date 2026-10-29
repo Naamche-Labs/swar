@@ -20,7 +20,9 @@ EVAL = "/home/data/eval"
 MANIFEST = "/home/data/nepali_tts/manifest.jsonl"
 HOLDOUT = "/home/data/ref/holdout_speakers.json"
 IVF5_VOCAB = "/home/models/IndicF5/checkpoints/vocab.txt"
-DEV = os.environ.get("EVAL_DEVICE", "cuda")
+from mos import _auto_device  # noqa: E402
+
+DEV = _auto_device()
 
 
 def build():
@@ -184,7 +186,8 @@ def run(name, ckpt, vocab=IVF5_VOCAB, arch=os.environ.get("F5_MODEL", "F5TTS_Bas
         wavs[it["id"]] = p
     del tts
     import torch
-    torch.cuda.empty_cache()
+    if torch.cuda.is_available():
+        torch.cuda.empty_cache()
     return score(name, wavs)
 
 
