@@ -2,7 +2,7 @@
 
 Swar speaks Nepali the way it is spoken in Nepal. Give it 20 to 30 seconds of one person talking (a WhatsApp voice note is enough) and it speaks in their voice: Nepali, English, and Nepali mixed with English. Built by [Naamche Labs](https://naamchelabs.com/models/swar).
 
-- **Try it in your browser, no setup:** [Swar Playground](https://naamchelabs.com/playground). Nine ready voices, or clone your own from 30 seconds of speech. 10 free minutes, nothing to install.
+- **Try it in your browser, no setup:** [Swar Playground](https://naamchelabs.com/playground). Nine ready voices, or clone your own from 30 seconds of speech. Free to try, nothing to install.
 - **Run it yourself:** [Colab notebook](https://colab.research.google.com/github/Naamche-Labs/swar/blob/main/notebooks/Swar_Clone_Colab.ipynb) on a free T4 GPU. Upload a clip, or pick a ready-made voice (Maya or Aarav).
 - **Weights:** [huggingface.co/Aarjan/swar](https://huggingface.co/Aarjan/swar)
 - **Cloning benchmark:** [github.com/Naamche-Labs/nepali-voice-cloning-bench](https://github.com/Naamche-Labs/nepali-voice-cloning-bench)
