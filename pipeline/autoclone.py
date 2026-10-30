@@ -458,14 +458,25 @@ def _say(voice_dir, text, out_wav, takes=12, nfe=16, keep_all=False, pace=None, 
         else:
             gen = text if mname == "eng" else to_model_text(text, "chars")
         rt = romanize(pr["text"]) if mname == "eng" else normalize(pr["text"]) if mname != "ours_en" or not _is_english(pr["text"]) else pr["text"]
+        import soundfile as sf
+        # F5 sizes speech as ref_sec / ref_text_bytes per byte of new text. A prompt whose transcript came back nearly
+        # empty (the recogniser failed on that clip) makes that ratio explode, and reference + speech overflow F5's
+        # 8192-frame window ("size of tensor a (9013) must match ... (8192)"). Skip such prompts.
+        if letters(rt) < 8:
+            continue
         set_pace(rt, pr["wav"])
         base_sp = pr["speed"] * (pace / v["rate"] if pace else 1.0)
         # English text said from a Nepali prompt: length by syllables, not bytes (clone.cross_script_speed)
         sp = cross_script_speed(gen, rt, base_sp) if mname == "ours_en" and not _is_english(rt) else speed_for(gen, base_sp)
+        # and never let one chunk (F5 splits text at ~135 characters) ask for more than the window holds
+        ref_sec = sf.info(pr["wav"]).duration
+        per_byte = ref_sec / max(1, len(rt.encode())) / sp
+        cap = (80.0 - ref_sec) / max(1, min(len(gen.encode()), 135 * 3))
+        if per_byte > cap:
+            sp *= per_byte / cap
         p = f"{work}/take_{i:02d}.wav"
         model.infer(ref_file=pr["wav"], ref_text=rt, gen_text=gen, file_wave=p, nfe_step=nfe, seed=seed, cfg_strength=cfg,
                     speed=sp, remove_silence=True)
-        import soundfile as sf
         if sf.info(p).duration < 0.3:   # silence trimming can leave nothing; ECAPA then crashes on an empty clip
             continue
         # a short upload can leave one piece only: compare with it rather than with nothing
@@ -496,7 +507,7 @@ def _say(voice_dir, text, out_wav, takes=12, nfe=16, keep_all=False, pace=None, 
     for c, h in zip(ours, read_back([c["file"] for c in ours]) if ours else []):  # one batched read-back per line
         c["heard"], c["cer"] = h, pcer(normalize(text), h)
     if not cands:
-        raise RuntimeError(f"every take came out silent for: {text[:60]}")
+        raise RuntimeError("no usable take: the voice clip could not be transcribed or every take came out silent. Try 20 to 30 s of clear speech from one person.")
     floor = min(_err(c) for c in cands)
     best = max([c for c in cands if _err(c) <= floor + 0.03], key=_score)
     shutil.copy(best["file"], out_wav)
